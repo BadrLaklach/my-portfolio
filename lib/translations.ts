@@ -29,7 +29,8 @@ export const translations = {
         mobileWeb: "Mobile & Web",
       },
       description:
-        "Étudiant en 4ème année d'Ingénierie Logicielle et Systèmes Intelligents à l'ENSAM Meknès. Passionné par le DevOps, le Cloud, l'IA et le Machine Learning. \"The only way to do great work is to love what you do.\" - Steve Jobs",
+        "Étudiant en 4ème année d'Ingénierie Logicielle et Systèmes Intelligents à l'ENSAM Meknès. Passionné par le DevOps, le Cloud, l'IA et le Machine Learning.",
+      quote: "\"The only way to do great work is to love what you do.\" - Steve Jobs",
       education: {
         title: "Mon parcours",
         ensam: {
@@ -235,7 +236,8 @@ export const translations = {
         mobileWeb: "Mobile & Web",
       },
       description:
-        "4th-year Software Engineering and Intelligent Systems student at ENSAM Meknès. Passionate about DevOps, Cloud, AI, and Machine Learning. \"The only way to do great work is to love what you do.\" - Steve Jobs",
+        "4th-year Software Engineering and Intelligent Systems student at ENSAM Meknès. Passionate about DevOps, Cloud, AI, and Machine Learning.",
+      quote: "\"The only way to do great work is to love what you do.\" - Steve Jobs",
       education: {
         title: "My Education",
         ensam: {

@@ -386,6 +386,10 @@ export default function Home() {
                   {t.about.description}
                 </p>
 
+                <p className="text-base sm:text-xl font-bold text-[#191919] dark:text-white text-center italic mb-12">
+                  {t.about.quote}
+                </p>
+
                 <div className="mb-8">
                   <h5 className="text-2xl sm:text-3xl font-bold mb-6 text-[#191919] dark:text-white">
                     {t.about.education.title}
@@ -491,18 +495,18 @@ export default function Home() {
                 date={t.projects.daripredictor.date}
                 tags={["Python", "XGBoost", "FastAPI", "React", "Docker"]}
                 siteUrl="https://github.com/BadrLaklach"
+                imageFit="contain"
               />
               <ProjectCard
                 images={[
-                  "/my-portfolio/portfolio.jpeg",
-                  "/my-portfolio/portfolio.jpeg",
-                  "/my-portfolio/portfolio.jpeg",
+                  "/my-portfolio/projects/xpfit/demo.mp4",
                 ]}
                 title="XP-FIT"
                 description={t.projects.xpfit.description}
                 date={t.projects.xpfit.date}
                 tags={["Flutter", "GetX", "REST API"]}
                 siteUrl="https://github.com/BadrLaklach"
+                isVideo={true}
               />
 
             </div>

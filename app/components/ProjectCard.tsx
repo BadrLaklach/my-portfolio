@@ -11,6 +11,7 @@ interface ProjectCardProps {
   tags: string[];
   isVideo?: boolean;
   siteUrl?: string;
+  imageFit?: "cover" | "contain";
 }
 
 export default function ProjectCard({
@@ -21,6 +22,7 @@ export default function ProjectCard({
   tags,
   isVideo = false,
   siteUrl,
+  imageFit = "cover",
 }: ProjectCardProps) {
   const { t } = useLanguage();
   const renderMedia = () => {
@@ -29,11 +31,14 @@ export default function ProjectCard({
         <div className="relative h-48 bg-gray-900">
           <video
             src={images[0]}
-            className="w-full h-full object-cover opacity-60"
-            poster={images[0].replace(".mp4", "-poster.jpg")}
+            className="w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
           />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0">
               <svg
                 className="w-8 h-8 text-white ml-1"
                 fill="currentColor"
@@ -55,7 +60,8 @@ export default function ProjectCard({
             alt={title}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover"
+            className={`object-${imageFit}`}
+            style={{ objectFit: imageFit }}
           />
         </div>
       );
@@ -70,7 +76,8 @@ export default function ProjectCard({
               alt={`${title} 1`}
               fill
               sizes="(max-width: 768px) 50vw, 25vw"
-              className="object-cover"
+              className={`object-${imageFit}`}
+              style={{ objectFit: imageFit }}
             />
           </div>
           <div className="relative h-48">
@@ -79,7 +86,8 @@ export default function ProjectCard({
               alt={`${title} 2`}
               fill
               sizes="(max-width: 768px) 50vw, 25vw"
-              className="object-cover"
+              className={`object-${imageFit}`}
+              style={{ objectFit: imageFit }}
             />
           </div>
         </div>
@@ -95,7 +103,8 @@ export default function ProjectCard({
               alt={`${title} 1`}
               fill
               sizes="(max-width: 768px) 50vw, 25vw"
-              className="object-cover"
+              className={`object-${imageFit}`}
+              style={{ objectFit: imageFit }}
             />
           </div>
           <div className="relative h-[5.75rem]">
@@ -104,7 +113,8 @@ export default function ProjectCard({
               alt={`${title} 2`}
               fill
               sizes="(max-width: 768px) 50vw, 25vw"
-              className="object-cover"
+              className={`object-${imageFit}`}
+              style={{ objectFit: imageFit }}
             />
           </div>
           <div className="relative h-[5.75rem]">
@@ -113,7 +123,8 @@ export default function ProjectCard({
               alt={`${title} 3`}
               fill
               sizes="(max-width: 768px) 50vw, 25vw"
-              className="object-cover"
+              className={`object-${imageFit}`}
+              style={{ objectFit: imageFit }}
             />
           </div>
         </div>
