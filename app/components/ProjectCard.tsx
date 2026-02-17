@@ -204,26 +204,35 @@ export default function ProjectCard({
           </div>
         )}
       </div>
-      <div className="p-6">
-        <h3 className="text-2xl font-bold text-[#191919] dark:text-white mb-2 translate-y-[-1px]">
-          {title}
-        </h3>
-        <p className="text-gray-700 dark:text-gray-300 mb-4 text-sm leading-relaxed">
-          {description}
-        </p>
-        <div className="flex items-center justify-between flex-wrap gap-3">
-          <span className="text-sm text-gray-500 dark:text-gray-400">
-            {date}
-          </span>
-          <div className="flex flex-wrap gap-2">
-            {tags.map((tag, index) => (
-              <span
-                key={index}
-                className="px-3 py-1 bg-gray-100 dark:bg-gray-750 text-gray-700 dark:text-gray-300 rounded-full text-xs font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-              >
-                {tag}
-              </span>
-            ))}
+      <div
+        className={
+          isVideo
+            ? `transition-all duration-500 ease-in-out overflow-hidden ${isHovering ? "max-h-0 opacity-0" : "max-h-[500px] opacity-100"
+            }`
+            : ""
+        }
+      >
+        <div className="p-6">
+          <h3 className="text-2xl font-bold text-[#191919] dark:text-white mb-2 translate-y-[-1px]">
+            {title}
+          </h3>
+          <p className="text-gray-700 dark:text-gray-300 mb-4 text-sm leading-relaxed">
+            {description}
+          </p>
+          <div className="flex items-center justify-between flex-wrap gap-3">
+            <span className="text-sm text-gray-500 dark:text-gray-400">
+              {date}
+            </span>
+            <div className="flex flex-wrap gap-2">
+              {tags.map((tag, index) => (
+                <span
+                  key={index}
+                  className="px-3 py-1 bg-gray-100 dark:bg-gray-750 text-gray-700 dark:text-gray-300 rounded-full text-xs font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </div>
