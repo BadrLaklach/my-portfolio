@@ -29,7 +29,7 @@ export const translations = {
         mobileWeb: "Mobile & Web",
       },
       description:
-        "Étudiant en 4ème année d'Ingénierie Logicielle et Systèmes Intelligents à l'École Nationale Supérieure d'Arts et Métiers (ENSAM) de Meknès. Passionné par le développement mobile, l'intelligence artificielle et la science des données, je construis des solutions innovantes en combinant technologie et créativité.",
+        "Étudiant en 4ème année d'Ingénierie Logicielle et Systèmes Intelligents à l'ENSAM Meknès. Passionné par le DevOps, le Cloud, l'IA et le Machine Learning. \"The only way to do great work is to love what you do.\" - Steve Jobs",
       education: {
         title: "Mon parcours",
         ensam: {
@@ -59,11 +59,7 @@ export const translations = {
           "Application mobile de fitness gamifiée développée avec Flutter. Système de récompenses XP basé sur le suivi du poids, intégration d'APIs fitness et nutrition pour un suivi santé complet. Conception UI/UX et logique de la page d'accueil.",
         date: "2025",
       },
-      networkTool: {
-        description:
-          "Outil de gestion de réseau local développé en VBA Excel. Application desktop pour le suivi des adresses IP, visualisation de la bande passante et gestion de l'inventaire réseau avec macros et userforms.",
-        date: "2024",
-      },
+
     },
     contact: {
       title: "Contact",
@@ -239,7 +235,7 @@ export const translations = {
         mobileWeb: "Mobile & Web",
       },
       description:
-        "4th-year Software Engineering and Intelligent Systems student at the National School of Arts and Crafts (ENSAM) in Meknès. Passionate about mobile development, artificial intelligence, and data science, I build innovative solutions by combining technology and creativity.",
+        "4th-year Software Engineering and Intelligent Systems student at ENSAM Meknès. Passionate about DevOps, Cloud, AI, and Machine Learning. \"The only way to do great work is to love what you do.\" - Steve Jobs",
       education: {
         title: "My Education",
         ensam: {
@@ -269,11 +265,7 @@ export const translations = {
           "Gamified fitness mobile application developed with Flutter. XP reward system based on weight tracking, integrated fitness and nutrition APIs for comprehensive health tracking. Led UI/UX design and home page logic.",
         date: "2025",
       },
-      networkTool: {
-        description:
-          "Local network management tool developed in Excel VBA. Desktop application for IP address tracking, bandwidth visualization, and network inventory management with macros and userforms.",
-        date: "2024",
-      },
+
     },
     contact: {
       title: "Contact",

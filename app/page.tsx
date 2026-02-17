@@ -482,9 +482,9 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <ProjectCard
                 images={[
-                  "/badr-laklach.jpg",
-                  "/badr-laklach.jpg",
-                  "/badr-laklach.jpg",
+                  "/projects/daripredictor/daripicture1.png",
+                  "/projects/daripredictor/daripicture2.png",
+                  "/projects/daripredictor/daripicture3.png",
                 ]}
                 title="DariPredictor"
                 description={t.projects.daripredictor.description}
@@ -504,18 +504,7 @@ export default function Home() {
                 tags={["Flutter", "GetX", "REST API"]}
                 siteUrl="https://github.com/BadrLaklach"
               />
-              <ProjectCard
-                images={[
-                  "/badr-laklach.jpg",
-                  "/badr-laklach.jpg",
-                  "/badr-laklach.jpg",
-                ]}
-                title="Network Management Tool"
-                description={t.projects.networkTool.description}
-                date={t.projects.networkTool.date}
-                tags={["Excel VBA", "Macros"]}
-                siteUrl="https://github.com/BadrLaklach"
-              />
+
             </div>
           </div>
         </section>
