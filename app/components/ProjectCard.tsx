@@ -48,8 +48,6 @@ export default function ProjectCard({
         <div
           className={`relative transition-all duration-300 ease-in-out ${isHovering ? "aspect-video h-auto" : "h-48"
             } bg-gray-900 overflow-hidden`}
-          onMouseEnter={() => setIsHovering(true)}
-          onMouseLeave={() => setIsHovering(false)}
         >
           {/* Video Layer */}
           <video
@@ -81,18 +79,7 @@ export default function ProjectCard({
               </div>
             )}
 
-            {/* Play Icon Overlay (only visible on thumbnail) */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                <svg
-                  className="w-8 h-8 text-white ml-1"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-            </div>
+
           </div>
         </div>
       );
@@ -186,32 +173,36 @@ export default function ProjectCard({
       target="_blank"
       rel="noopener noreferrer"
       className="block bg-white dark:bg-[#1a1a1a] rounded-2xl overflow-hidden shadow-sm hover:shadow-md hover:bg-gray-50 dark:hover:bg-[#222222] transition-all duration-300 group cursor-pointer"
+      onMouseEnter={() => isVideo && setIsHovering(true)}
+      onMouseLeave={() => isVideo && setIsHovering(false)}
     >
       <div className="relative">
         {renderMedia()}
-        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/60 backdrop-blur-sm">
-          <div className="text-white text-center">
-            <span className="text-xl font-bold flex items-center gap-2">
-              {t.projects.seeProject}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-external-link-icon lucide-external-link"
-              >
-                <path d="M15 3h6v6" />
-                <path d="M10 14 21 3" />
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-              </svg>
-            </span>
+        {!isVideo && (
+          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/60 backdrop-blur-sm">
+            <div className="text-white text-center">
+              <span className="text-xl font-bold flex items-center gap-2">
+                {t.projects.seeProject}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-external-link-icon lucide-external-link"
+                >
+                  <path d="M15 3h6v6" />
+                  <path d="M10 14 21 3" />
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                </svg>
+              </span>
+            </div>
           </div>
-        </div>
+        )}
       </div>
       <div className="p-6">
         <h3 className="text-2xl font-bold text-[#191919] dark:text-white mb-2 translate-y-[-1px]">
