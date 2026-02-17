@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     siteName: "Badr Laklach - Portfolio",
     images: [
       {
-        url: "/portfolio.jpeg",
+        url: "/my-portfolio/portfolio.jpeg",
         width: 1080,
         height: 1080,
         alt: "Badr Laklach",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     title: "Badr Laklach - Portfolio",
     description:
       "Portfolio of Badr Laklach, Software Engineering student at ENSAM Meknès.",
-    images: ["/portfolio.jpeg"],
+    images: ["/my-portfolio/portfolio.jpeg"],
   },
 };
 

@@ -331,7 +331,7 @@ export default function Home() {
               <div className="flex-shrink-0 w-full md:w-auto">
                 <div className="relative w-full h-80 sm:w-72 sm:h-[22rem] sm:mx-auto md:mx-0 rounded-[1.5rem] overflow-hidden group">
                   <Image
-                    src="/portfolio.jpeg"
+                    src="/my-portfolio/portfolio.jpeg"
                     alt="Badr Laklach"
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 288px, 288px"
@@ -482,9 +482,9 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <ProjectCard
                 images={[
-                  "/projects/daripredictor/daripicture1.png",
-                  "/projects/daripredictor/daripicture2.png",
-                  "/projects/daripredictor/daripicture3.png",
+                  "/my-portfolio/projects/daripredictor/daripicture1.png",
+                  "/my-portfolio/projects/daripredictor/daripicture2.png",
+                  "/my-portfolio/projects/daripredictor/daripicture3.png",
                 ]}
                 title="DariPredictor"
                 description={t.projects.daripredictor.description}
@@ -494,9 +494,9 @@ export default function Home() {
               />
               <ProjectCard
                 images={[
-                  "/badr-laklach.jpg",
-                  "/badr-laklach.jpg",
-                  "/badr-laklach.jpg",
+                  "/my-portfolio/portfolio.jpeg",
+                  "/my-portfolio/portfolio.jpeg",
+                  "/my-portfolio/portfolio.jpeg",
                 ]}
                 title="XP-FIT"
                 description={t.projects.xpfit.description}
@@ -529,7 +529,7 @@ export default function Home() {
                   <div className="flex items-center gap-4 mb-6">
                     <div className="relative w-24 h-24 rounded-full overflow-hidden flex-shrink-0">
                       <Image
-                        src="/portfolio.jpeg"
+                        src="/my-portfolio/portfolio.jpeg"
                         alt="Badr Laklach"
                         fill
                         sizes="96px"

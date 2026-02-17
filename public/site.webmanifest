@@ -2,23 +2,23 @@
   "name": "Badr Laklach",
   "short_name": "VG",
   "description": "Étudiant de 2e année en BUT Métiers du Multimédia et de l'Internet à l'IUT d'Angoulême.",
-  "start_url": "/",
+  "start_url": "/my-portfolio/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "/favicon.ico",
+      "src": "/my-portfolio/favicon.ico",
       "sizes": "any",
       "type": "image/x-icon"
     },
     {
-      "src": "/icon.png",
+      "src": "/my-portfolio/apple-icon.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/apple-icon.png",
+      "src": "/my-portfolio/apple-icon.png",
       "sizes": "180x180",
       "type": "image/png"
     }
