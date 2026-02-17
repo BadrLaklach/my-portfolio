@@ -1,0 +1,225 @@
+%-------------------------
+% CV in LaTeX — Badr Laklach
+% Dark Navy Theme | ATS-Friendly | Fixed Layout
+%------------------------
+
+\documentclass[a4paper,10.5pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+
+%--- Modern Icons Package ---
+\usepackage{fontawesome5} 
+
+%--- Darker Color Palette ---
+\definecolor{navy}{RGB}{0, 25, 60} 
+\definecolor{navylight}{RGB}{20, 45, 85} 
+
+\setlength{\multicolsep}{0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.2cm, top=0.75cm, right=1.2cm, bottom=0.8cm}
+
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%---- Section Formatting ----
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large\bfseries\color{navy}
+}{}{0em}{}[\color{navy}\titlerule \vspace{-5pt}]
+
+%---- Custom Commands ----
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-0.5pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1mm}\item
+  \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\small #1} & \textit{\footnotesize \textcolor{navylight}{#4}} \\
+    \textit{\footnotesize\textcolor{navylight}{#3}} & \footnotesize{#2}\\
+  \end{tabular*}
+  \vspace{-2mm}
+}
+
+\newcommand{\resumeProject}[2]{
+  \vspace{1mm}\item
+  \begin{tabular*}{0.98\textwidth}[t]{l}
+    \textbf{\small #1} \\
+    \footnotesize{\textit{#2}}
+  \end{tabular*}
+  \vspace{-2mm}
+}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{1mm}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep, labelsep=1.2mm, itemsep=0.5pt]\small}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1mm}}
+
+%-------------------------------------------
+\begin{document}
+\fontfamily{lmr}\selectfont
+
+%----------HEADER-----------------
+\begin{center}
+    \begin{tabular}{ p{2.8cm} p{10.5cm} p{4.5cm} }
+        % --- COLUMN 1: PHOTO ---
+        \vspace{0pt} 
+        \begin{minipage}{2.8cm}
+           \setlength{\fboxsep}{0pt}
+           \setlength{\fboxrule}{1.5pt}
+           \fcolorbox{navy}{white}{\includegraphics[width=2.5cm,height=2.5cm,keepaspectratio]{picturebadr.png}}
+        \end{minipage} 
+        & 
+        % --- COLUMN 2: NAME & TITLE ---
+        \vspace{0pt} 
+        \begin{minipage}{10.5cm}
+            \textbf{\Huge \color{navy} Badr Laklach}\\[4pt]
+            {\Large \color{navylight} Software Engineering Student}\\[3pt]
+            {\small National School of Arts and Crafts (ENSAM), Meknes}\\[2pt]
+            {\small Software Engineering \& Intelligent Systems --- 4th Year}
+        \end{minipage}
+        & 
+        % --- COLUMN 3: CONTACT INFO ---
+        \vspace{0pt} 
+        \begin{minipage}{4.5cm}
+            \raggedleft\small
+            \vspace{5pt} 
+            {+212-0617415547} \enspace \faPhone\\[3pt] 
+            \href{mailto:badrlaklach27@gmail.com}{badrlaklach27@gmail.com} \enspace \faEnvelope\\[3pt]
+            \href{https://linkedin.com/in/badr-laklach-6a45602b7}{badr-laklach} \enspace \faLinkedin\\[3pt]
+            \href{https://github.com/BadrLaklach}{BadrLaklach} \enspace \faGithub\\[3pt]
+            {Boumia, Midelt, Morocco} \enspace \faMapMarker*
+        \end{minipage}
+    \end{tabular}
+\end{center}
+
+\vspace{-5mm}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {National School of Arts and Crafts (ENSAM), Meknes}{2022 -- Present}
+    {Engineering Degree in Software Engineering \& Intelligent Systems}{4th Year -- In Progress}
+  \resumeSubheading
+    {Baccalaureate in Mathematical Sciences A}{2022}
+    {Honors: Good}{}
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Oracle Cloud Infrastructure 2025 -- Data Science Professional}{Oct 2025 -- Oct 2027}
+    {Oracle | Python, ML development, MLOps, cloud-based AI deployment}{}
+  \resumeSubheading
+    {Oracle Cloud Infrastructure 2025 -- Foundations Associate}{Oct 2025 -- Oct 2027}
+    {Oracle | Cloud architecture, IAM, networking, compute, storage, databases}{}
+  \resumeSubheading
+    {PCEP -- Certified Entry-Level Python Programmer}{Aug 2025}
+    {Python Institute via Cisco Networking Academy}{}
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Mobile Developer Intern}{Jul 2025 -- Aug 2025}
+    {Med You In (On-site)}{Meknes, Morocco}
+    \resumeItemListStart
+      \resumeItem{Built two production Flutter apps (HR Admin Interface \& E-commerce) with enterprise-grade stability and sub-3s launch times.}
+      \resumeItem{Implemented secure auth with Supabase (PostgreSQL + Auth) and Google OAuth 2.0; real-time data sync via Clean Architecture.}
+      \resumeItem{Managed UI state with GetX; integrated Firebase Cloud Messaging and built automated HR analytics dashboards.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProject
+    {DariPredictor --- End-to-End Real Estate Prediction Web Application}
+    {Full-Stack Website | Python | XGBoost | FastAPI | React/Vite | Docker}
+    \resumeItemListStart
+      \resumeItem{Developed a comprehensive web application to predict Moroccan real estate prices using advanced Machine Learning.}
+      \resumeItem{Scraped and cleaned \textasciitilde20k listings with custom Crawlee spiders; applied Target Encoding and luxury feature engineering.}
+      \resumeItem{Benchmarked RF, XGBoost, ANN, SVM; final Stacking Ensemble achieved \textbf{R\textsuperscript{2}=0.842}.}
+      \resumeItem{Deployed as a responsive website with Docker, async FastAPI backend, and React/Vite frontend wizard.}
+    \resumeItemListEnd
+
+  \resumeProject
+    {XP-FIT --- Gamified Fitness Mobile Application}
+    {Flutter | REST APIs | UI/UX Design}
+    \resumeItemListStart
+      \resumeItem{Led UI/UX design and home page logic; built XP reward system based on weight tracking for gamified motivation.}
+      \resumeItem{Integrated fitness and nutrition APIs for comprehensive health tracking; developed with a team of three.}
+    \resumeItemListEnd
+
+  \resumeProject
+    {Local Network Management Tool --- Excel VBA}
+    {VBA | Macros | Excel Tables | Userforms}
+    \resumeItemListStart
+      \resumeItem{Built a VBA desktop app for IP address tracking, bandwidth visualization, and network inventory management.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+%-----------ACTIVITIES-----------
+\section{Activities \& Leadership}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {MoroccoAI Hackathon --- Participant}{2024}
+    {Gadz'IT Club | Built an AI-based solution with a multidisciplinary team}{}
+  \resumeSubheading
+    {ENSAM Student Clubs --- Active Member}{2022 -- 2024}
+    {CS \& Music Clubs | Co-organizer ENSAM Forum 21st ed. | Integration Week Tutor}{}
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.1in, label={}, itemsep=1.5pt]
+  \small\item{
+    \textbf{Languages:} Python, Java, C++, C, JavaScript, Dart, SQL, Bash, VBA\\
+    \textbf{Mobile \& Web:} Flutter, GetX, React, Vite, FastAPI, Node.js, Express.js, Spring Boot, JavaFX\\
+    \textbf{ML / Data Science:} XGBoost, LightGBM, CatBoost, scikit-learn, TensorFlow, Pandas, NumPy\\
+    \textbf{Data Engineering:} Web Scraping (Crawlee, BeautifulSoup), Feature Engineering\\
+    \textbf{Databases:} PostgreSQL, MySQL, MongoDB, Supabase, Oracle\\
+    \textbf{DevOps \& Tools:} Git, Docker, Firebase, Android Studio, IntelliJ, VS Code\\
+    \textbf{Concepts:} OOP, Design Patterns, Data Structures \& Algorithms, Agile/Scrum\\
+    \textbf{Languages:} Arabic (Native), French (C1), English (C1)
+  }
+\end{itemize}
+\vspace{-8pt}
+
+%-----------INTERESTS-----------
+\section{Interests}
+\begin{itemize}[leftmargin=0.1in, label={}, itemsep=1pt]
+  \small\item{
+    \textbf{Music:} Guitarist (3 yrs), beat production \& composition \quad\textbf{Sports:} Weekly gym training \quad\textbf{Tech:} AI \& Data Science
+  }
+\end{itemize}
+
+\end{document}
