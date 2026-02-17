@@ -507,6 +507,7 @@ export default function Home() {
                 tags={["Flutter", "GetX", "REST API"]}
                 siteUrl="https://github.com/BadrLaklach"
                 isVideo={true}
+                thumbnail="/my-portfolio/projects/xpfit/thumbnail.png"
               />
 
             </div>

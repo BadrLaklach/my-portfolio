@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { useLanguage } from "@/lib/useLanguage";
 
@@ -12,6 +13,7 @@ interface ProjectCardProps {
   isVideo?: boolean;
   siteUrl?: string;
   imageFit?: "cover" | "contain";
+  thumbnail?: string;
 }
 
 export default function ProjectCard({
@@ -23,29 +25,73 @@ export default function ProjectCard({
   isVideo = false,
   siteUrl,
   imageFit = "cover",
+  thumbnail,
 }: ProjectCardProps) {
   const { t } = useLanguage();
+  const [isHovering, setIsHovering] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (isVideo && videoRef.current) {
+      if (isHovering) {
+        videoRef.current.play().catch((e) => console.log("Video play failed:", e));
+      } else {
+        videoRef.current.pause();
+        videoRef.current.currentTime = 0;
+      }
+    }
+  }, [isHovering, isVideo]);
+
   const renderMedia = () => {
     if (isVideo && images.length === 1) {
       return (
-        <div className="relative h-48 bg-gray-900">
+        <div
+          className={`relative transition-all duration-300 ease-in-out ${isHovering ? "aspect-video h-auto" : "h-48"
+            } bg-gray-900 overflow-hidden`}
+          onMouseEnter={() => setIsHovering(true)}
+          onMouseLeave={() => setIsHovering(false)}
+        >
+          {/* Video Layer */}
           <video
+            ref={videoRef}
             src={images[0]}
-            className="w-full h-full object-cover"
-            autoPlay
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${isHovering ? "opacity-100" : "opacity-0"
+              }`}
             muted
             loop
             playsInline
           />
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0">
-              <svg
-                className="w-8 h-8 text-white ml-1"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M8 5v14l11-7z" />
-              </svg>
+
+          {/* Thumbnail Layer */}
+          <div
+            className={`absolute inset-0 transition-opacity duration-300 ${isHovering ? "opacity-0" : "opacity-100"
+              }`}
+          >
+            {thumbnail ? (
+              <Image
+                src={thumbnail}
+                alt={title}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+              />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center bg-gray-800 text-gray-400">
+                <span className="text-sm">No Thumbnail</span>
+              </div>
+            )}
+
+            {/* Play Icon Overlay (only visible on thumbnail) */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                <svg
+                  className="w-8 h-8 text-white ml-1"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
