@@ -3,9 +3,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Politique de Confidentialité - Valentin Gil",
+  title: "Politique de Confidentialité - Badr Laklach",
   description:
-    "Politique de confidentialité et traitement des données personnelles sur vgil.fr",
+    "Politique de confidentialité et traitement des données personnelles sur le portfolio de Badr Laklach",
 };
 
 export default function Confidentialite() {
@@ -113,7 +113,7 @@ export default function Confidentialite() {
             </h2>
             <p>
               Les données sont destinées uniquement à l&apos;éditeur du site,
-              Valentin Gil, et ne sont jamais transmises ni revendues à des
+              Badr Laklach, et ne sont jamais transmises ni revendues à des
               tiers. Certaines données de navigation anonymisées peuvent être
               traitées par Vercel Inc., en sa qualité d&apos;hébergement et
               d&apos;analyse.
@@ -152,10 +152,10 @@ export default function Confidentialite() {
               Pour exercer vos droits, vous pouvez envoyer une demande à
               l&apos;adresse suivante :{" "}
               <a
-                href="mailto:contact@vgil.fr"
+                href="mailto:badrlaklach27@gmail.com"
                 className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white underline underline-offset-2 transition-colors"
               >
-                contact@vgil.fr
+                badrlaklach27@gmail.com
               </a>
               . Si vous estimez, après avoir contacté l&apos;éditeur, que vos
               droits ne sont pas respectés, vous pouvez introduire une

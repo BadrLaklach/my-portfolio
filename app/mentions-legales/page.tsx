@@ -3,8 +3,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Mentions Légales - Valentin Gil",
-  description: "Mentions légales et informations légales du site vgil.fr",
+  title: "Mentions Légales - Badr Laklach",
+  description: "Mentions légales et informations légales du site Badr Laklach",
 };
 
 export default function MentionsLegales() {
@@ -21,17 +21,17 @@ export default function MentionsLegales() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">1. Éditeur du site</h2>
             <p>
-              Ce site est édité par : <strong>Valentin Gil</strong>
+              Ce site est édité par : <strong>Badr Laklach</strong>
               <br />
-              Adresse : <strong>16000 Angoulême, France</strong>
+              Adresse : <strong>Meknès, Maroc</strong>
               <br />
               Email :{" "}
               <strong>
                 <a
-                  href="mailto:contact@vgil.fr"
+                  href="mailto:badrlaklach27@gmail.com"
                   className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
                 >
-                  contact@vgil.fr
+                  badrlaklach27@gmail.com
                 </a>
               </strong>
             </p>
@@ -73,7 +73,7 @@ export default function MentionsLegales() {
             <p>
               L&apos;ensemble des éléments du site (textes, images, graphismes,
               logos, etc.) sont, sauf mention contraire, la propriété exclusive
-              de Valentin Gil. <br />
+              de Badr Laklach. <br />
               Toute reproduction, modification, distribution ou utilisation,
               totale ou partielle, de ces éléments sans autorisation écrite
               préalable est strictement interdite et constitue une violation des
@@ -103,10 +103,10 @@ export default function MentionsLegales() {
               suppression de vos données personnelles. Pour exercer ce droit,
               vous pouvez envoyer une demande à l&apos;adresse suivante :{" "}
               <a
-                href="mailto:contact@vgil.fr"
+                href="mailto:badrlaklach27@gmail.com"
                 className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white underline underline-offset-2 transition-colors"
               >
-                contact@vgil.fr
+                badrlaklach27@gmail.com
               </a>
             </p>
           </section>

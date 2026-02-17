@@ -44,7 +44,7 @@ export const translations = {
         },
       },
       viewCV: "Voir mon CV",
-      cvLink: "/assets/LAKLACH_Badr_CV.pdf",
+      cvLink: "/my-portfolio/assets/CV2026BADR.pdf",
     },
     projects: {
       title: "Projets",
@@ -114,7 +114,7 @@ export const translations = {
       3: {
         title: "3. Propriété intellectuelle",
         content:
-          "L'ensemble des éléments du site (textes, images, graphismes, logos, etc.) sont, sauf mention contraire, la propriété exclusive de Valentin Gil. <br />Toute reproduction, modification, distribution ou utilisation, totale ou partielle, de ces éléments sans autorisation écrite préalable est strictement interdite et constitue une violation des droits d'auteur. <br />Certaines ressources utilisées sur le site (polices, icônes, bibliothèques JavaScript) restent la propriété de leurs auteurs respectifs et sont utilisées conformément à leurs licenses.",
+          "L'ensemble des éléments du site (textes, images, graphismes, logos, etc.) sont, sauf mention contraire, la propriété exclusive de Badr Laklach. <br />Toute reproduction, modification, distribution ou utilisation, totale ou partielle, de ces éléments sans autorisation écrite préalable est strictement interdite et constitue une violation des droits d'auteur. <br />Certaines ressources utilisées sur le site (polices, icônes, bibliothèques JavaScript) restent la propriété de leurs auteurs respectifs et sont utilisées conformément à leurs licenses.",
       },
       4: {
         title: "4. Données personnelles",
@@ -179,7 +179,7 @@ export const translations = {
       5: {
         title: "5. Destinataires des données",
         content:
-          "Les données sont destinées uniquement à l'éditeur du site, Valentin Gil, et ne sont jamais transmises ni revendues à des tiers. Certaines données de navigation anonymisées peuvent être traitées par Vercel Inc., en sa qualité d'hébergement et d'analyse.",
+          "Les données sont destinées uniquement à l'éditeur du site, Badr Laklach, et ne sont jamais transmises ni revendues à des tiers. Certaines données de navigation anonymisées peuvent être traitées par Vercel Inc., en sa qualité d'hébergement et d'analyse.",
       },
       6: {
         title: "6. Droits des utilisateurs",
@@ -254,7 +254,7 @@ export const translations = {
         },
       },
       viewCV: "View my CV",
-      cvLink: "/assets/LAKLACH_Badr_CV_English.pdf",
+      cvLink: "/my-portfolio/assets/CV2026BADR.pdf",
     },
     projects: {
       title: "Projects",
@@ -324,7 +324,7 @@ export const translations = {
       3: {
         title: "3. Intellectual Property",
         content:
-          "All elements of the site (texts, images, graphics, logos, etc.) are, unless otherwise stated, the exclusive property of Valentin Gil. <br />Any reproduction, modification, distribution, or use, in whole or in part, of these elements without prior written authorization is strictly prohibited and constitutes a violation of copyright. <br />Some resources used on the site (fonts, icons, JavaScript libraries) remain the property of their respective authors and are used in accordance with their licenses.",
+          "All elements of the site (texts, images, graphics, logos, etc.) are, unless otherwise stated, the exclusive property of Badr Laklach. <br />Any reproduction, modification, distribution, or use, in whole or in part, of these elements without prior written authorization is strictly prohibited and constitutes a violation of copyright. <br />Some resources used on the site (fonts, icons, JavaScript libraries) remain the property of their respective authors and are used in accordance with their licenses.",
       },
       4: {
         title: "4. Personal Data",
@@ -389,7 +389,7 @@ export const translations = {
       5: {
         title: "5. Data Recipients",
         content:
-          "The data is intended solely for the site editor, Valentin Gil, and is never transmitted or sold to third parties. Some anonymized browsing data may be processed by Vercel Inc. in its capacity as host and analyst.",
+          "The data is intended solely for the site editor, Badr Laklach, and is never transmitted or sold to third parties. Some anonymized browsing data may be processed by Vercel Inc. in its capacity as host and analyst.",
       },
       6: {
         title: "6. User Rights",

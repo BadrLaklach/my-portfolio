@@ -1,18 +1,18 @@
 export const siteStructuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Valentin Gil",
-  url: "https://vgil.fr",
+  name: "Badr Laklach",
+  url: "https://badrlaklach.github.io/my-portfolio",
   sameAs: [
-    "https://github.com/valentin-gil",
-    "https://www.linkedin.com/in/valentin-gil/",
+    "https://github.com/BadrLaklach",
+    "https://linkedin.com/in/badr-laklach-6a45602b7",
   ],
   jobTitle:
-    "Étudiant de 2e année en BUT Métiers du Multimédia et de l'Internet à l'IUT d'Angoulême.",
+    "Student in Software Engineering and Intelligent Systems",
   description:
-    "Portfolio de Valentin Gil, étudiant de 2e année en BUT MMI à l'IUT d'Angoulême.",
+    "Portfolio of Badr Laklach, Software Engineering student at ENSAM Meknès.",
   worksFor: {
     "@type": "Organization",
-    name: "Valentin Gil",
+    name: "ENSAM Meknès",
   },
 };

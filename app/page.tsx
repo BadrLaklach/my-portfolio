@@ -236,7 +236,7 @@ export default function Home() {
                   strokeWidth="2"
                   style={{ fontSize: "112px", fontFamily: "inherit" }}
                 >
-                  Valentin Gil
+                  Badr Laklach
                 </text>
               </svg>
               <svg
@@ -276,11 +276,11 @@ export default function Home() {
                   strokeWidth="2"
                   style={{ fontSize: "133px", fontFamily: "inherit" }}
                 >
-                  Valentin Gil
+                  Badr Laklach
                 </text>
               </svg>
               <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-center relative z-10 whitespace-nowrap">
-                Valentin Gil
+                Badr Laklach
               </h1>
             </div>
 
@@ -331,8 +331,8 @@ export default function Home() {
               <div className="flex-shrink-0 w-full md:w-auto">
                 <div className="relative w-full h-80 sm:w-72 sm:h-[22rem] sm:mx-auto md:mx-0 rounded-[1.5rem] overflow-hidden group">
                   <Image
-                    src="/badr-laklach.jpg"
-                    alt="Valentin Gil"
+                    src="/portfolio.jpeg"
+                    alt="Badr Laklach"
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 288px, 288px"
                     className="object-cover object-top"
@@ -349,10 +349,10 @@ export default function Home() {
               <div className="flex-1">
                 <div className="mb-6">
                   <h3 className="text-3xl sm:text-4xl font-medium text-gray-900 dark:text-white">
-                    Valentin
+                    Badr
                   </h3>
                   <h4 className="text-5xl sm:text-6xl font-bold text-gray-900 dark:text-white">
-                    Gil
+                    Laklach
                   </h4>
                 </div>
 
@@ -540,8 +540,8 @@ export default function Home() {
                   <div className="flex items-center gap-4 mb-6">
                     <div className="relative w-24 h-24 rounded-full overflow-hidden flex-shrink-0">
                       <Image
-                        src="/valentin-gil.jpg"
-                        alt="Valentin Gil"
+                        src="/portfolio.jpeg"
+                        alt="Badr Laklach"
                         fill
                         sizes="96px"
                         className="object-cover object-top"
@@ -549,7 +549,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="text-[2rem] font-bold text-[#191919] dark:text-white mb-1 translate-y-[-5px]">
-                        Valentin Gil
+                        Badr Laklach
                       </h3>
                       <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-green-100 dark:bg-green-900/30 border border-green-600 dark:border-green-500 rounded-full text-sm font-medium text-green-700 dark:text-green-400 leading-none translate-y-[-5px]">
                         <span className="relative inline-flex">
@@ -568,7 +568,7 @@ export default function Home() {
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     <a
-                      href="https://linkedin.com/in/valentin-gil"
+                      href="https://linkedin.com/in/badr-laklach-6a45602b7"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-4 py-2 bg-[#0A66C2] text-white rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
@@ -583,7 +583,7 @@ export default function Home() {
                       <span className="translate-y-[-1px]">LinkedIn</span>
                     </a>
                     <a
-                      href="https://github.com/valentin-gil"
+                      href="https://github.com/BadrLaklach"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-4 py-2 bg-[#191919] dark:bg-white text-white dark:text-[#191919] rounded-full text-sm font-medium hover:opacity-80 transition-opacity"
@@ -605,7 +605,7 @@ export default function Home() {
                 </div>
 
                 <a
-                  href="mailto:contact@vgil.fr"
+                  href="mailto:badrlaklach27@gmail.com"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-gray-200 dark:bg-[#222222] text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium hover:bg-gray-300 dark:hover:bg-[#2a2a2a] transition-colors"
                 >
                   <svg
@@ -615,7 +615,7 @@ export default function Home() {
                   >
                     <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"></path>
                   </svg>
-                  <span className="translate-y-[-1px]">contact@vgil.fr</span>
+                  <span className="translate-y-[-1px]">badrlaklach27@gmail.com</span>
                 </a>
               </div>
 

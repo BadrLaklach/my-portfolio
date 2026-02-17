@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
           <div>
             <h3 className="text-[2rem] font-semibold mb-3 sm:mb-4 text-gray-900 dark:text-white">
-              Valentin Gil
+              Badr Laklach
             </h3>
             <p className="text-gray-600 dark:text-gray-400 md:pr-5">
               {t.footer.description}
@@ -130,7 +130,7 @@ export default function Footer() {
 
             <div className="mb-3 sm:mb-4">
               <a
-                href="mailto:contact@vgil.fr"
+                href="mailto:badrlaklach27@gmail.com"
                 className="flex items-center gap-2 text-sm sm:text-base text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
               >
                 <svg
@@ -142,7 +142,7 @@ export default function Footer() {
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
-                contact@vgil.fr
+                badrlaklach27@gmail.com
               </a>
             </div>
 
@@ -160,7 +160,7 @@ export default function Footer() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Angoulême, France
+                Meknès, Maroc
               </div>
             </div>
 
@@ -170,7 +170,7 @@ export default function Footer() {
               </p>
               <div className="flex gap-3">
                 <a
-                  href="https://linkedin.com/in/valentin-gil"
+                  href="https://linkedin.com/in/badr-laklach-6a45602b7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-6 h-6 flex items-center justify-center text-gray-900 dark:text-white hover:opacity-60 transition-opacity duration-300"
@@ -186,7 +186,7 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a
-                  href="https://github.com/valentin-gil"
+                  href="https://github.com/BadrLaklach"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-6 h-6 flex items-center justify-center text-gray-900 dark:text-white hover:opacity-60 transition-opacity duration-300"
@@ -214,7 +214,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4 text-center md:text-left">
           <p className="text-sm text-gray-700 dark:text-gray-300">
-            © {new Date().getFullYear()} Valentin Gil. {t.footer.rights}
+            © {new Date().getFullYear()} Badr Laklach. {t.footer.rights}
           </p>
           <div className="flex items-center gap-2 text-sm">
             <Link

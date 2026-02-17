@@ -29,7 +29,7 @@ export async function POST(request: Request) {
 
     const mailOptions = {
       from: process.env.SMTP_FROM || process.env.SMTP_USER,
-      to: "contact@vgil.fr",
+      to: "badrlaklach27@gmail.com",
       subject: `Nouveau message de ${prenom} ${nom}`,
       text: `
 Nom: ${nom}
@@ -65,11 +65,6 @@ ${message}
                   <tr>
                     <td style="padding: 48px 40px 40px 40px;">
                       
-                      <!-- Logo VG -->
-                      <div style="text-align: center; margin-bottom: 40px;">
-                        <a href="https://vgil.fr"><img src="https://vgil.fr/vg.png" alt="Logo VG" style="width: 80px; height: auto;" /></a>
-                      </div>
-
                       <!-- Titre avec barre -->
                       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 32px;">
                         <tr>
@@ -100,9 +95,6 @@ ${message}
                               </h2>
                               <table role="presentation" cellpadding="0" cellspacing="0" style="background-color: rgba(255, 255, 255, 0.1) !important; border-radius: 20px;">
                                 <tr>
-                                  <td style="padding: 6px 6px 6px 12px;">
-                                    <img src="https://vgil.fr/envelope.png" alt="Email" style="width: 16px; height: 16px; display: block; vertical-align: middle;" />
-                                  </td>
                                   <td style="padding: 6px 12px 6px 4px;">
                                     <a href="mailto:${email}" style="color: #D1D5DC !important; font-size: 14px; font-weight: 500; text-decoration: none !important; border-bottom: none !important; box-shadow: none !important; white-space: nowrap; display: inline-block; vertical-align: middle;">
                                       ${email}
@@ -143,10 +135,10 @@ ${message}
                     <td style="background-color: #0f0f0f !important; padding: 24px 40px; text-align: center; border-top: 1px solid #2a2a2a;">
                       <p style="margin: 0 !important; color: #999999 !important; font-size: 13px; line-height: 1.5;">
                         Ce message a été envoyé depuis le formulaire de contact de 
-                        <a href="https://vgil.fr" style="color: #ffffff !important; text-decoration: none; font-weight: 600;">vgil.fr</a>
+                        <a href="https://badrlaklach.github.io/my-portfolio" style="color: #ffffff !important; text-decoration: none; font-weight: 600;">Badr Laklach Portfolio</a>
                       </p>
                       <p style="margin: 8px 0 0 0 !important; color: #666666 !important; font-size: 12px;">
-                        © ${new Date().getFullYear()} Valentin Gil. Tous droits réservés.
+                        © ${new Date().getFullYear()} Badr Laklach. Tous droits réservés.
                       </p>
                     </td>
                   </tr>

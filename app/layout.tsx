@@ -24,10 +24,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vgil.fr"),
-  title: "Valentin Gil - Portfolio",
+  metadataBase: new URL("https://badrlaklach.github.io/my-portfolio"),
+  title: "Badr Laklach - Portfolio",
   description:
-    "Étudiant de 2e année en BUT Métiers du Multimédia et de l'Internet à l'IUT d'Angoulême.",
+    "Portfolio of Badr Laklach, Software Engineering student at ENSAM Meknès.",
   icons: {
     icon: [
       { url: "/favicon.ico", type: "image/x-icon" },
@@ -37,24 +37,24 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   alternates: {
-    canonical: "https://vgil.fr",
+    canonical: "https://badrlaklach.github.io/my-portfolio",
     languages: {
-      "fr": "https://vgil.fr",
-      "x-default": "https://vgil.fr",
+      "fr": "https://badrlaklach.github.io/my-portfolio",
+      "x-default": "https://badrlaklach.github.io/my-portfolio",
     },
   },
   openGraph: {
-    title: "Valentin Gil - Portfolio",
+    title: "Badr Laklach - Portfolio",
     description:
-      "Étudiant de 2e année en BUT Métiers du Multimédia et de l'Internet à l'IUT d'Angoulême.",
-    url: "https://vgil.fr",
-    siteName: "Valentin Gil - Portfolio",
+      "Portfolio of Badr Laklach, Software Engineering student at ENSAM Meknès.",
+    url: "https://badrlaklach.github.io/my-portfolio",
+    siteName: "Badr Laklach - Portfolio",
     images: [
       {
-        url: "/thumbnail.png",
+        url: "/portfolio.jpeg",
         width: 1080,
         height: 1080,
-        alt: "Valentin Gil",
+        alt: "Badr Laklach",
       },
     ],
     locale: "fr_FR",
@@ -62,10 +62,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Valentin Gil - Portfolio",
+    title: "Badr Laklach - Portfolio",
     description:
-      "Étudiant de 2e année en BUT Métiers du Multimédia et de l'Internet à l'IUT d'Angoulême.",
-    images: ["/thumbnail.png"],
+      "Portfolio of Badr Laklach, Software Engineering student at ENSAM Meknès.",
+    images: ["/portfolio.jpeg"],
   },
 };
 
