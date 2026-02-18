@@ -49,7 +49,7 @@ export default function ProjectCard({
     if (isVideo && images.length === 1) {
       return (
         <div
-          className={`relative transition-all duration-300 ease-in-out ${isHovering ? `${videoAspectRatio} h-auto max-h-[600px]` : "h-48"
+          className={`relative transition-all duration-300 ease-in-out ${isHovering ? "aspect-video h-auto" : "h-48"
             } bg-gray-900 overflow-hidden`}
         >
           {/* Video Layer */}
@@ -133,7 +133,7 @@ export default function ProjectCard({
     if (images.length === 3) {
       return (
         <div className="grid grid-cols-2 gap-2">
-          <div className="relative h-48 row-span-2 bg-gray-50 dark:bg-gray-800/50">
+          <div className="relative h-48 row-span-2">
             <Image
               src={images[0]}
               alt={`${title} 1`}
@@ -149,7 +149,8 @@ export default function ProjectCard({
               alt={`${title} 2`}
               fill
               sizes="(max-width: 768px) 50vw, 25vw"
-              className="object-cover"
+              className={`object-${imageFit}`}
+              style={{ objectFit: imageFit }}
             />
           </div>
           <div className="relative h-[5.75rem]">
@@ -158,7 +159,8 @@ export default function ProjectCard({
               alt={`${title} 3`}
               fill
               sizes="(max-width: 768px) 50vw, 25vw"
-              className="object-cover"
+              className={`object-${imageFit}`}
+              style={{ objectFit: imageFit }}
             />
           </div>
         </div>
