@@ -209,28 +209,18 @@ export default function ProjectCard({
           </div>
         )}
       </div>
-      <div>
+      <div
+        className={
+          isVideo
+            ? `transition-opacity duration-700 ease-in-out ${isHovering ? "opacity-0" : "opacity-100"}`
+            : ""
+        }
+      >
         <div className="p-6">
-          <h3
-            className={`text-2xl font-bold text-[#191919] dark:text-white mb-2 translate-y-[-1px] ${
-              isVideo
-                ? `transition-opacity duration-700 ease-in-out ${
-                    isHovering ? "opacity-0" : "opacity-100"
-                  }`
-                : ""
-            }`}
-          >
+          <h3 className="text-2xl font-bold text-[#191919] dark:text-white mb-2 translate-y-[-1px]">
             {title}
           </h3>
-          <p
-            className={`text-gray-700 dark:text-gray-300 mb-4 text-sm leading-relaxed ${
-              isVideo
-                ? `transition-opacity duration-700 ease-in-out ${
-                    isHovering ? "opacity-0" : "opacity-100"
-                  }`
-                : ""
-            }`}
-          >
+          <p className="text-gray-700 dark:text-gray-300 mb-4 text-sm leading-relaxed">
             {description}
           </p>
           <div className="flex items-center justify-between flex-wrap gap-3">
