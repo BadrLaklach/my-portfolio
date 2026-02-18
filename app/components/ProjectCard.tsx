@@ -48,22 +48,23 @@ export default function ProjectCard({
   const renderMedia = () => {
     if (isVideo && images.length === 1) {
       return (
-        <div className="relative h-48 bg-gray-900 overflow-hidden">
+        <div className="relative h-48 bg-gray-900 overflow-hidden w-full">
           {/* Video Layer */}
           <video
             ref={videoRef}
             src={images[0]}
-            className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out ${
+            className={`absolute inset-0 w-full h-full min-h-full object-contain transition-opacity duration-700 ease-in-out ${
               isHovering ? "opacity-100" : "opacity-0"
             }`}
             muted
             loop
             playsInline
+            style={{ minHeight: '100%' }}
           />
 
           {/* Thumbnail Layer */}
           <div
-            className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+            className={`absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out ${
               isHovering ? "opacity-0" : "opacity-100"
             }`}
           >
