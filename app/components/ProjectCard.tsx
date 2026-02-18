@@ -49,15 +49,19 @@ export default function ProjectCard({
     if (isVideo && images.length === 1) {
       return (
         <div
-          className={`relative transition-all duration-300 ease-in-out ${isHovering ? "aspect-video h-auto" : "h-48"
-            } bg-gray-900 overflow-hidden`}
+          className={`relative transition-all duration-500 ease-in-out bg-gray-900 overflow-hidden ${
+            isHovering 
+              ? `${videoAspectRatio} h-auto` 
+              : "h-48"
+          }`}
         >
           {/* Video Layer */}
           <video
             ref={videoRef}
             src={images[0]}
-            className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-300 ${isHovering ? "opacity-100" : "opacity-0"
-              }`}
+            className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-500 ease-in-out ${
+              isHovering ? "opacity-100" : "opacity-0"
+            }`}
             muted
             loop
             playsInline
@@ -65,8 +69,9 @@ export default function ProjectCard({
 
           {/* Thumbnail Layer */}
           <div
-            className={`absolute inset-0 transition-opacity duration-300 ${isHovering ? "opacity-0" : "opacity-100"
-              }`}
+            className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
+              isHovering ? "opacity-0" : "opacity-100"
+            }`}
           >
             {thumbnail ? (
               <Image
@@ -81,8 +86,6 @@ export default function ProjectCard({
                 <span className="text-sm">No Thumbnail</span>
               </div>
             )}
-
-
           </div>
         </div>
       );
@@ -132,8 +135,8 @@ export default function ProjectCard({
 
     if (images.length === 3) {
       return (
-        <div className="grid grid-cols-2 gap-2">
-          <div className="relative h-48 row-span-2">
+        <div className="grid grid-cols-2 gap-2 h-48">
+          <div className="relative row-span-2">
             <Image
               src={images[0]}
               alt={`${title} 1`}
@@ -143,7 +146,7 @@ export default function ProjectCard({
               style={{ objectFit: imageFit }}
             />
           </div>
-          <div className="relative h-[5.75rem]">
+          <div className="relative">
             <Image
               src={images[1]}
               alt={`${title} 2`}
@@ -153,7 +156,7 @@ export default function ProjectCard({
               style={{ objectFit: imageFit }}
             />
           </div>
-          <div className="relative h-[5.75rem]">
+          <div className="relative">
             <Image
               src={images[2]}
               alt={`${title} 3`}
