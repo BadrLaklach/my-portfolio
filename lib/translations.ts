@@ -33,10 +33,15 @@ export const translations = {
       quote: "\"The only way to do great work is to love what you do.\" - Steve Jobs",
       education: {
         title: "Mon parcours",
-        ensam: {
+        ensamEngineering: {
           location: "École Nationale Supérieure d'Arts et Métiers (ENSAM), Meknès",
-          degree: "Diplôme d'Ingénieur en Génie Logiciel et Systèmes Intelligents",
-          date: "2022 - Présent (4ème année)",
+          degree: "Cycle Ingénieur en Génie Logiciel et Systèmes Intelligents",
+          date: "2024 - Présent (2ème année)",
+        },
+        ensamPreparatory: {
+          location: "École Nationale Supérieure d'Arts et Métiers (ENSAM), Meknès",
+          degree: "Cycle Préparatoire Intégré",
+          date: "2022 - 2024 (2 ans)",
         },
         highschool: {
           location: "Baccalauréat en Sciences Mathématiques A",
@@ -240,10 +245,15 @@ export const translations = {
       quote: "\"The only way to do great work is to love what you do.\" - Steve Jobs",
       education: {
         title: "My Education",
-        ensam: {
+        ensamEngineering: {
           location: "National School of Arts and Crafts (ENSAM), Meknès",
-          degree: "Engineering Degree in Software Engineering & Intelligent Systems",
-          date: "2022 - Present (4th Year)",
+          degree: "Engineering Cycle in Software Engineering & Intelligent Systems",
+          date: "2024 - Present (2nd Year)",
+        },
+        ensamPreparatory: {
+          location: "National School of Arts and Crafts (ENSAM), Meknès",
+          degree: "Integrated Preparatory Cycle",
+          date: "2022 - 2024 (2 years)",
         },
         highschool: {
           location: "Baccalaureate in Mathematical Sciences A",

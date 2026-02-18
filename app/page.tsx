@@ -406,18 +406,34 @@ export default function Home() {
                       <div className="flex items-start justify-between gap-2">
                         <div className="flex-1 min-w-0">
                           <h6 className="text-lg font-bold text-[#191919] dark:text-white uppercase">
-                            {t.about.education.ensam.location}
+                            {t.about.education.ensamEngineering.location}
                           </h6>
                           <p className="text-base font-medium text-gray-700 dark:text-gray-300">
-                            {t.about.education.ensam.degree}
+                            {t.about.education.ensamEngineering.degree}
                           </p>
                         </div>
                         <span className="text-sm italic text-gray-600 dark:text-gray-400 whitespace-nowrap flex-shrink-0">
-                          {t.about.education.ensam.date}
+                          {t.about.education.ensamEngineering.date}
                         </span>
                       </div>
                     </div>
 
+                    <div className="relative pl-8">
+                      <div className="absolute left-0 top-2 w-4 h-4 rounded-full bg-gray-300 dark:bg-gray-700 border-[3px] border-[#191919] dark:border-white"></div>
+                      <div className="flex items-start justify-between gap-2">
+                        <div className="flex-1 min-w-0">
+                          <h6 className="text-lg font-bold text-[#191919] dark:text-white uppercase">
+                            {t.about.education.ensamPreparatory.location}
+                          </h6>
+                          <p className="text-base font-medium text-gray-700 dark:text-gray-300">
+                            {t.about.education.ensamPreparatory.degree}
+                          </p>
+                        </div>
+                        <span className="text-sm italic text-gray-600 dark:text-gray-400 whitespace-nowrap flex-shrink-0">
+                          {t.about.education.ensamPreparatory.date}
+                        </span>
+                      </div>
+                    </div>
 
                     <div className="relative pl-8">
                       <div className="absolute left-0 top-2 w-4 h-4 rounded-full bg-gray-300 dark:bg-gray-700 border-[3px] border-[#191919] dark:border-white"></div>
