@@ -125,7 +125,7 @@ export default function ProjectCard({
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
-              style={{ objectFit: "cover", objectPosition: "top center", transform: "scale(1.08)" }}
+              style={{ objectFit: "cover", objectPosition: "top center", transform: "scale(1.0)" }}
             />
           </div>
         );
