@@ -48,40 +48,24 @@ export default function ProjectCard({
   const renderMedia = () => {
     if (isVideo && images.length === 1) {
       return (
-        <div className="relative h-48 bg-gray-900 overflow-hidden w-full">
-          {/* Video Layer */}
-          <video
-            ref={videoRef}
-            src={images[0]}
-            className={`absolute inset-0 w-full h-full min-h-full object-contain transition-opacity duration-700 ease-in-out ${
-              isHovering ? "opacity-100" : "opacity-0"
-            }`}
-            muted
-            loop
-            playsInline
-            style={{ minHeight: '100%' }}
-          />
-
-          {/* Thumbnail Layer */}
-          <div
-            className={`absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out ${
-              isHovering ? "opacity-0" : "opacity-100"
-            }`}
-          >
-            {thumbnail ? (
-              <Image
-                src={thumbnail}
-                alt={title}
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
-              />
-            ) : (
-              <div className="w-full h-full flex items-center justify-center bg-gray-800 text-gray-400">
-                <span className="text-sm">No Thumbnail</span>
-              </div>
-            )}
-          </div>
+        <div
+          className={`relative h-48 bg-gray-900 overflow-hidden w-full transition-opacity duration-700 ease-in-out ${
+            isHovering ? "opacity-0" : "opacity-100"
+          }`}
+        >
+          {thumbnail ? (
+            <Image
+              src={thumbnail}
+              alt={title}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center bg-gray-800 text-gray-400">
+              <span className="text-sm">No Thumbnail</span>
+            </div>
+          )}
         </div>
       );
     }
@@ -173,10 +157,30 @@ export default function ProjectCard({
       href={siteUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="block bg-white dark:bg-[#1a1a1a] rounded-2xl overflow-hidden shadow-sm hover:shadow-md hover:bg-gray-50 dark:hover:bg-[#222222] transition-all duration-300 group cursor-pointer"
+      className="relative block bg-white dark:bg-[#1a1a1a] rounded-2xl overflow-hidden shadow-sm hover:shadow-md hover:bg-gray-50 dark:hover:bg-[#222222] transition-all duration-300 group cursor-pointer"
       onMouseEnter={() => isVideo && setIsHovering(true)}
       onMouseLeave={() => isVideo && setIsHovering(false)}
     >
+      {isVideo && images.length === 1 && (
+        <div
+          className={`pointer-events-none absolute inset-0 transition-opacity duration-700 ease-in-out ${
+            isHovering ? "opacity-100" : "opacity-0"
+          }`}
+          aria-hidden="true"
+        >
+          <video
+            ref={videoRef}
+            src={images[0]}
+            className="w-full h-full object-cover"
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster={thumbnail}
+          />
+        </div>
+      )}
+
       <div className="relative">
         {renderMedia()}
         {!isVideo && (
@@ -210,7 +214,15 @@ export default function ProjectCard({
           <h3 className="text-2xl font-bold text-[#191919] dark:text-white mb-2 translate-y-[-1px]">
             {title}
           </h3>
-          <p className="text-gray-700 dark:text-gray-300 mb-4 text-sm leading-relaxed">
+          <p
+            className={`text-gray-700 dark:text-gray-300 mb-4 text-sm leading-relaxed ${
+              isVideo
+                ? `transition-opacity duration-700 ease-in-out ${
+                    isHovering ? "opacity-0" : "opacity-100"
+                  }`
+                : ""
+            }`}
+          >
             {description}
           </p>
           <div className="flex items-center justify-between flex-wrap gap-3">
