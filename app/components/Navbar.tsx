@@ -70,7 +70,7 @@ export default function Navbar() {
                   className="flex items-center"
                   aria-label={t.nav.returnHomepage}
                 >
-                  <Logo className="h-8 w-auto" />
+                  <Logo className="h-10 w-auto" />
                 </Link>
               ) : (
                 <a
@@ -82,7 +82,7 @@ export default function Navbar() {
                   className="flex items-center"
                   aria-label={t.nav.returnHomepage}
                 >
-                  <Logo className="h-8 w-auto" />
+                  <Logo className="h-10 w-auto" />
                 </a>
               )}
             </div>
