@@ -48,18 +48,12 @@ export default function ProjectCard({
   const renderMedia = () => {
     if (isVideo && images.length === 1) {
       return (
-        <div
-          className={`relative transition-all duration-500 ease-in-out bg-gray-900 overflow-hidden ${
-            isHovering 
-              ? `${videoAspectRatio} h-auto` 
-              : "h-48"
-          }`}
-        >
+        <div className="relative h-48 bg-gray-900 overflow-hidden">
           {/* Video Layer */}
           <video
             ref={videoRef}
             src={images[0]}
-            className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-500 ease-in-out ${
+            className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out ${
               isHovering ? "opacity-100" : "opacity-0"
             }`}
             muted
@@ -69,7 +63,7 @@ export default function ProjectCard({
 
           {/* Thumbnail Layer */}
           <div
-            className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
+            className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
               isHovering ? "opacity-0" : "opacity-100"
             }`}
           >
@@ -136,14 +130,14 @@ export default function ProjectCard({
     if (images.length === 3) {
       return (
         <div className="grid grid-cols-2 gap-2 h-48">
-          <div className="relative row-span-2">
+          <div className="relative row-span-2 bg-gray-900">
             <Image
               src={images[0]}
               alt={`${title} 1`}
               fill
               sizes="(max-width: 768px) 50vw, 25vw"
-              className={`object-${imageFit}`}
-              style={{ objectFit: imageFit }}
+              className="object-contain"
+              style={{ objectFit: "contain" }}
             />
           </div>
           <div className="relative">
