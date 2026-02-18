@@ -205,14 +205,7 @@ export default function ProjectCard({
           </div>
         )}
       </div>
-      <div
-        className={
-          isVideo
-            ? `transition-all duration-500 ease-in-out overflow-hidden ${isHovering ? "max-h-0 opacity-0" : "max-h-[500px] opacity-100"
-            }`
-            : ""
-        }
-      >
+      <div>
         <div className="p-6">
           <h3 className="text-2xl font-bold text-[#191919] dark:text-white mb-2 translate-y-[-1px]">
             {title}
