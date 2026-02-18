@@ -53,7 +53,7 @@ export default function ProjectCard({
           <video
             ref={videoRef}
             src={images[0]}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${isHovering ? "opacity-100" : "opacity-0"
+            className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-300 ${isHovering ? "opacity-100" : "opacity-0"
               }`}
             muted
             loop
