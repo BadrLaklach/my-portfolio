@@ -125,24 +125,24 @@ export default function ProjectCard({
               style={{ objectFit: "contain" }}
             />
           </div>
-          <div className="relative">
+          <div className="relative bg-gray-900">
             <Image
               src={images[1]}
               alt={`${title} 2`}
               fill
               sizes="(max-width: 768px) 50vw, 25vw"
-              className={`object-${imageFit}`}
-              style={{ objectFit: imageFit }}
+              className="object-contain"
+              style={{ objectFit: "contain" }}
             />
           </div>
-          <div className="relative">
+          <div className="relative bg-gray-900">
             <Image
               src={images[2]}
               alt={`${title} 3`}
               fill
               sizes="(max-width: 768px) 50vw, 25vw"
-              className={`object-${imageFit}`}
-              style={{ objectFit: imageFit }}
+              className="object-contain"
+              style={{ objectFit: "contain" }}
             />
           </div>
         </div>
@@ -171,7 +171,7 @@ export default function ProjectCard({
           <video
             ref={videoRef}
             src={images[0]}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
             muted
             loop
             playsInline
@@ -211,7 +211,15 @@ export default function ProjectCard({
       </div>
       <div>
         <div className="p-6">
-          <h3 className="text-2xl font-bold text-[#191919] dark:text-white mb-2 translate-y-[-1px]">
+          <h3
+            className={`text-2xl font-bold text-[#191919] dark:text-white mb-2 translate-y-[-1px] ${
+              isVideo
+                ? `transition-opacity duration-700 ease-in-out ${
+                    isHovering ? "opacity-0" : "opacity-100"
+                  }`
+                : ""
+            }`}
+          >
             {title}
           </h3>
           <p
