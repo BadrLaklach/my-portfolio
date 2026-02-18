@@ -49,7 +49,7 @@ export default function ProjectCard({
     if (isVideo && images.length === 1) {
       return (
         <div
-          className={`relative transition-all duration-300 ease-in-out ${isHovering ? `${videoAspectRatio} h-auto` : "h-48"
+          className={`relative transition-all duration-300 ease-in-out ${isHovering ? `${videoAspectRatio} h-auto max-h-[600px]` : "h-48"
             } bg-gray-900 overflow-hidden`}
         >
           {/* Video Layer */}
