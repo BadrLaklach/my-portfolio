@@ -113,36 +113,35 @@ export default function ProjectCard({
     }
 
     if (images.length === 3) {
+      const isDariPredictor = title === "DariPredictor";
       return (
-        <div className="grid grid-cols-2 gap-0 h-48">
-          <div className="relative row-span-2 bg-gray-900">
+        <div className={`grid grid-cols-2 ${isDariPredictor ? "gap-0" : "gap-2"}`}>
+          <div className={`relative h-48 row-span-2 ${isDariPredictor ? "" : "bg-gray-900"}`}>
             <Image
               src={images[0]}
               alt={`${title} 1`}
               fill
               sizes="(max-width: 768px) 50vw, 25vw"
-              className="object-contain"
-              style={{ objectFit: "contain" }}
+              className={isDariPredictor ? "object-contain" : "object-cover"}
+              style={{ objectFit: isDariPredictor ? "contain" : "cover" }}
             />
           </div>
-          <div className="relative bg-gray-900">
+          <div className={`relative ${isDariPredictor ? "h-24" : "h-[5.75rem]"} ${isDariPredictor ? "" : "bg-gray-900"}`}>
             <Image
               src={images[1]}
               alt={`${title} 2`}
               fill
               sizes="(max-width: 768px) 50vw, 25vw"
-              className="object-contain"
-              style={{ objectFit: "contain" }}
+              className={isDariPredictor ? "object-cover" : "object-cover"}
             />
           </div>
-          <div className="relative bg-gray-900">
+          <div className={`relative ${isDariPredictor ? "h-24" : "h-[5.75rem]"} ${isDariPredictor ? "" : "bg-gray-900"}`}>
             <Image
               src={images[2]}
               alt={`${title} 3`}
               fill
               sizes="(max-width: 768px) 50vw, 25vw"
-              className="object-contain"
-              style={{ objectFit: "contain" }}
+              className={isDariPredictor ? "object-cover" : "object-cover"}
             />
           </div>
         </div>
