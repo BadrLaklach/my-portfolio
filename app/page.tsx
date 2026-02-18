@@ -484,31 +484,36 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
-              <ProjectCard
-                images={[
-                  "/my-portfolio/projects/daripredictor/daripicture1.png",
-                  "/my-portfolio/projects/daripredictor/daripicture2.png",
-                  "/my-portfolio/projects/daripredictor/daripicture3.png",
-                ]}
-                title="DariPredictor"
-                description={t.projects.daripredictor.description}
-                date={t.projects.daripredictor.date}
-                tags={["Python", "XGBoost", "FastAPI", "React", "Docker"]}
-                siteUrl="https://github.com/BadrLaklach"
-                imageFit="contain"
-              />
-              <ProjectCard
-                images={[
-                  "/my-portfolio/projects/xpfit/demo.mp4",
-                ]}
-                title="XP-FIT"
-                description={t.projects.xpfit.description}
-                date={t.projects.xpfit.date}
-                tags={["Flutter", "GetX", "REST API"]}
-                siteUrl="https://github.com/BadrLaklach"
-                isVideo={true}
-                thumbnail="/my-portfolio/projects/xpfit/thumbnail.png"
-              />
+              <div className="self-start">
+                <ProjectCard
+                  images={[
+                    "/my-portfolio/projects/daripredictor/daripicture1.png",
+                    "/my-portfolio/projects/daripredictor/daripicture2.png",
+                    "/my-portfolio/projects/daripredictor/daripicture3.png",
+                  ]}
+                  title="DariPredictor"
+                  description={t.projects.daripredictor.description}
+                  date={t.projects.daripredictor.date}
+                  tags={["Python", "XGBoost", "FastAPI", "React", "Docker"]}
+                  siteUrl="https://github.com/BadrLaklach"
+                  imageFit="contain"
+                />
+              </div>
+              <div className="self-start">
+                <ProjectCard
+                  images={[
+                    "/my-portfolio/projects/xpfit/demo.mp4",
+                  ]}
+                  title="XP-FIT"
+                  description={t.projects.xpfit.description}
+                  date={t.projects.xpfit.date}
+                  tags={["Flutter", "GetX", "REST API"]}
+                  siteUrl="https://github.com/BadrLaklach"
+                  isVideo={true}
+                  thumbnail="/my-portfolio/projects/xpfit/thumbnail.png"
+                  videoAspectRatio="aspect-[9/19]"
+                />
+              </div>
 
             </div>
           </div>
