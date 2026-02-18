@@ -115,8 +115,11 @@ export default function ProjectCard({
     if (images.length === 3) {
       const isDariPredictor = title === "DariPredictor";
       return (
-        <div className={`grid grid-cols-2 ${isDariPredictor ? "gap-0" : "gap-2"}`}>
-          <div className={`relative h-48 row-span-2 ${isDariPredictor ? "" : "bg-gray-900"}`}>
+        <div 
+          className={`grid ${isDariPredictor ? "gap-0" : "gap-2"} ${isDariPredictor ? "" : "grid-cols-2"}`}
+          style={isDariPredictor ? { gridTemplateColumns: "3fr 2fr" } : {}}
+        >
+          <div className={`relative ${isDariPredictor ? "h-56" : "h-48"} row-span-2 ${isDariPredictor ? "" : "bg-gray-900"}`}>
             <Image
               src={images[0]}
               alt={`${title} 1`}
@@ -126,7 +129,7 @@ export default function ProjectCard({
               style={{ objectFit: isDariPredictor ? "contain" : "cover" }}
             />
           </div>
-          <div className={`relative ${isDariPredictor ? "h-24" : "h-[5.75rem]"} ${isDariPredictor ? "" : "bg-gray-900"}`}>
+          <div className={`relative ${isDariPredictor ? "h-28" : "h-[5.75rem]"} ${isDariPredictor ? "" : "bg-gray-900"}`}>
             <Image
               src={images[1]}
               alt={`${title} 2`}
@@ -135,7 +138,7 @@ export default function ProjectCard({
               className={isDariPredictor ? "object-cover" : "object-cover"}
             />
           </div>
-          <div className={`relative ${isDariPredictor ? "h-24" : "h-[5.75rem]"} ${isDariPredictor ? "" : "bg-gray-900"}`}>
+          <div className={`relative ${isDariPredictor ? "h-28" : "h-[5.75rem]"} ${isDariPredictor ? "" : "bg-gray-900"}`}>
             <Image
               src={images[2]}
               alt={`${title} 3`}
