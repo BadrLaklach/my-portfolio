@@ -114,7 +114,7 @@ export default function ProjectCard({
 
     if (images.length === 3) {
       return (
-        <div className="grid grid-cols-2 gap-2 h-48">
+        <div className="grid grid-cols-2 gap-0 h-48">
           <div className="relative row-span-2 bg-gray-900">
             <Image
               src={images[0]}
