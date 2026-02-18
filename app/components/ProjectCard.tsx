@@ -118,14 +118,14 @@ export default function ProjectCard({
       // For DariPredictor, show only the first image
       if (isDariPredictor) {
         return (
-          <div className="relative h-48 bg-gray-900">
+          <div className="relative h-48 bg-gray-900 overflow-hidden">
             <Image
               src={images[0]}
               alt={`${title} 1`}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-contain"
-              style={{ objectFit: "contain" }}
+              className="object-cover"
+              style={{ objectFit: "cover", objectPosition: "top center", transform: "scale(1.08)" }}
             />
           </div>
         );
