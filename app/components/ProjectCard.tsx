@@ -34,6 +34,7 @@ export default function ProjectCard({
   useEffect(() => {
     if (isVideo && videoRef.current) {
       if (isHovering) {
+        videoRef.current.playbackRate = 2.0;
         videoRef.current.play().catch((e) => console.log("Video play failed:", e));
       } else {
         videoRef.current.pause();
