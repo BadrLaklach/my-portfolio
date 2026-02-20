@@ -21,30 +21,33 @@ export default function Experience() {
                     </div>
                 </div>
 
-                <div className="max-w-4xl">
-                    <div className="relative space-y-12">
-                        {/* Timeline line */}
-                        <div
-                            className="absolute left-[7px] top-0 bottom-0 w-[2px] bg-[#191919] dark:bg-white"
-                        ></div>
+                <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
+                    <div className="flex-shrink-0 w-full md:w-auto">
+                        <div className="relative w-full h-48 sm:w-72 sm:h-48 rounded-[1.5rem] overflow-hidden bg-white dark:bg-[#1a1a1a] border border-gray-100 dark:border-gray-800 flex items-center justify-center p-8 group hover:shadow-md transition-shadow duration-300">
+                            <div className="relative w-full h-full">
+                                <Image
+                                    src="/my-portfolio/assets/medyouin.png"
+                                    alt={t.experience.medyouin.company}
+                                    fill
+                                    sizes="(max-width: 640px) 100vw, 288px"
+                                    className="object-contain invert dark:invert-0 transition-all duration-300"
+                                />
+                            </div>
+                        </div>
+                    </div>
 
-                        <div className="relative pl-8">
-                            {/* Timeline dot */}
-                            <div className="absolute left-0 top-2 w-4 h-4 rounded-full bg-[#191919] dark:bg-white"></div>
+                    <div className="flex-1 w-full">
+                        <div className="relative space-y-12">
+                            {/* Timeline line */}
+                            <div className="absolute left-[7px] top-0 bottom-0 w-[2px] bg-[#191919] dark:bg-white"></div>
 
-                            <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
-                                <div className="flex-1 min-w-0">
-                                    <div className="flex items-center gap-3 mb-1">
-                                        <div className="relative w-8 h-8 flex-shrink-0">
-                                            <Image
-                                                src="/my-portfolio/assets/medyouin.png"
-                                                alt={t.experience.medyouin.company}
-                                                fill
-                                                sizes="32px"
-                                                className="object-contain invert dark:invert-0 transition-all duration-300"
-                                            />
-                                        </div>
-                                        <h3 className="text-lg font-bold text-[#191919] dark:text-white uppercase">
+                            <div className="relative pl-8">
+                                {/* Timeline dot */}
+                                <div className="absolute left-0 top-2 w-4 h-4 rounded-full bg-[#191919] dark:bg-white"></div>
+
+                                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
+                                    <div className="flex-1 min-w-0">
+                                        <h3 className="text-xl font-bold text-[#191919] dark:text-white uppercase">
                                             <a
                                                 href={t.experience.medyouin.link}
                                                 target="_blank"
@@ -54,25 +57,30 @@ export default function Experience() {
                                                 {t.experience.medyouin.company}
                                             </a>
                                         </h3>
+                                        <p className="text-lg font-medium text-gray-700 dark:text-gray-300">
+                                            {t.experience.medyouin.role} • {t.experience.medyouin.location}
+                                        </p>
                                     </div>
-                                    <p className="text-base font-medium text-gray-700 dark:text-gray-300">
-                                        {t.experience.medyouin.role} • {t.experience.medyouin.location}
-                                    </p>
+                                    <span className="text-sm italic text-gray-600 dark:text-gray-400 whitespace-nowrap flex-shrink-0 sm:pt-1">
+                                        {t.experience.medyouin.date}
+                                    </span>
                                 </div>
-                                <span className="text-sm italic text-gray-600 dark:text-gray-400 whitespace-nowrap flex-shrink-0 sm:pt-1">
-                                    {t.experience.medyouin.date}
-                                </span>
-                            </div>
 
-                            <div className="mt-4">
-                                <ul className="space-y-3">
-                                    {t.experience.medyouin.achievements.map((achievement, index) => (
-                                        <li key={index} className="flex gap-3 text-gray-700 dark:text-gray-300 leading-relaxed text-base">
-                                            <span className="text-[#191919] dark:text-white font-bold">•</span>
-                                            <span>{achievement}</span>
-                                        </li>
-                                    ))}
-                                </ul>
+                                <div className="mt-6">
+                                    <ul className="space-y-4">
+                                        {t.experience.medyouin.achievements.map((achievement, index) => (
+                                            <li
+                                                key={index}
+                                                className="flex gap-3 text-gray-700 dark:text-gray-300 leading-relaxed text-base sm:text-lg"
+                                            >
+                                                <span className="text-[#191919] dark:text-white font-bold">
+                                                    •
+                                                </span>
+                                                <span>{achievement}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
