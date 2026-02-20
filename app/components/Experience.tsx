@@ -23,7 +23,7 @@ export default function Experience() {
 
                 <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
                     <div className="flex-shrink-0 w-full md:w-auto">
-                        <div className="relative w-full h-48 sm:w-72 sm:h-48 rounded-[1.5rem] overflow-hidden bg-white dark:bg-[#1a1a1a] border border-gray-100 dark:border-gray-800 flex items-center justify-center p-8 group hover:shadow-md transition-shadow duration-300">
+                        <div className="relative w-full h-48 sm:w-72 sm:h-48 flex items-center justify-center group transition-all duration-300">
                             <div className="relative w-full h-full">
                                 <Image
                                     src="/my-portfolio/assets/medyouin.png"
