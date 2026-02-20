@@ -481,6 +481,8 @@ export default function Home() {
           </div>
         </section>
 
+        <Experience />
+
         <section
           id={t.sections.projects}
           className="pt-32 pb-8 bg-gray-50 dark:bg-[#121212]"
