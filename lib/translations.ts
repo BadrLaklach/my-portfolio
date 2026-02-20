@@ -2,6 +2,7 @@ export const translations = {
   fr: {
     sections: {
       about: "a-propos",
+      experience: "experience",
       projects: "projets",
       contact: "contact",
     },
@@ -9,6 +10,7 @@ export const translations = {
       returnHomepage: "Retour à l'accueil",
       home: "Accueil",
       about: "À propos",
+      experience: "Expérience",
       projects: "Projets",
       contact: "Contact",
       modeToggle: "Basculer entre le thème clair et sombre",
@@ -51,6 +53,21 @@ export const translations = {
       },
       viewCV: "Voir mon CV",
       cvLink: "/my-portfolio/assets/CV2026BADR.pdf",
+    },
+    experience: {
+      title: "Expérience",
+      medyouin: {
+        company: "Med You In",
+        role: "Stagiaire Développeur Mobile",
+        location: "Meknès, Maroc (Sur site)",
+        date: "Juil 2025 – Août 2025",
+        achievements: [
+          "Développement de deux applications Flutter de production (Interface Admin RH & E-commerce) avec une stabilité entreprise et des temps de lancement rapides (< 3s).",
+          "Implémentation d'une authentification sécurisée via Supabase (PostgreSQL + Auth) et Google OAuth 2.0 ; synchronisation des données via Clean Architecture.",
+          "Gestion d'état avec GetX, intégration Firebase Cloud Messaging et création d'un tableau de bord analytique RH automatisé.",
+        ],
+        link: "https://www.medyouin.com/",
+      },
     },
     projects: {
       title: "Projets",
@@ -214,6 +231,7 @@ export const translations = {
   en: {
     sections: {
       about: "about",
+      experience: "experience",
       projects: "projects",
       contact: "contact",
     },
@@ -221,6 +239,7 @@ export const translations = {
       returnHomepage: "Return to homepage",
       home: "Home",
       about: "About",
+      experience: "Experience",
       projects: "Projects",
       contact: "Contact",
       modeToggle: "Toggle between light and dark theme",
@@ -263,6 +282,21 @@ export const translations = {
       },
       viewCV: "View my CV",
       cvLink: "/my-portfolio/assets/CV2026BADR.pdf",
+    },
+    experience: {
+      title: "Experience",
+      medyouin: {
+        company: "Med You In",
+        role: "Mobile Developer Intern",
+        location: "Meknes, Morocco (On-site)",
+        date: "Jul 2025 – Aug 2025",
+        achievements: [
+          "Built two production Flutter apps (HR Admin Interface & E-commerce) with enterprise-grade stability and sub-3s launch times.",
+          "Implemented secure auth with Supabase (PostgreSQL + Auth) and Google OAuth 2.0; real-time data sync via Clean Architecture.",
+          "Managed UI state with GetX; integrated Firebase Cloud Messaging and built automated HR analytics dashboard.",
+        ],
+        link: "https://www.medyouin.com/",
+      },
     },
     projects: {
       title: "Projects",
