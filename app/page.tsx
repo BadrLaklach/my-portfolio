@@ -505,7 +505,7 @@ export default function Home() {
                   title="DariPredictor"
                   description={t.projects.daripredictor.description}
                   date={t.projects.daripredictor.date}
-                  tags={["Python", "XGBoost", "FastAPI", "React", "Docker"]}
+                  tags={["Python", "ANN", "FastAPI", "React", "Docker"]}
                   siteUrl="https://github.com/BadrLaklach"
                   imageFit="contain"
                 />
@@ -518,7 +518,7 @@ export default function Home() {
                   title="XP-FIT"
                   description={t.projects.xpfit.description}
                   date={t.projects.xpfit.date}
-                  tags={["Flutter", "GetX", "REST API"]}
+                  tags={["Flutter", "REST APIs", "UI/UX Design"]}
                   siteUrl="https://github.com/BadrLaklach"
                   isVideo={true}
                   thumbnail="/my-portfolio/projects/xpfit/thumbnail.png"

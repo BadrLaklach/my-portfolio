@@ -57,12 +57,12 @@ export const translations = {
       seeProject: "Accéder au site",
       daripredictor: {
         description:
-          "Application web complète de prédiction des prix de l'immobilier au Maroc utilisant l'apprentissage automatique avancé. Scraping et nettoyage de ~20k annonces, modèle d'ensemble Stacking avec R²=0.842, déployé avec Docker, backend FastAPI async et frontend React/Vite.",
+          "Plateforme full-stack utilisant un modèle d'ensemble Stacking pour prédire les prix de l'immobilier au Maroc. Scraping et nettoyage de 20k annonces via Crawlee, avec ingénierie de caractéristiques avancée. Backend FastAPI async et frontend React/Vite conteneurisés sous Docker.",
         date: "2024",
       },
       xpfit: {
         description:
-          "Application mobile de fitness gamifiée développée avec Flutter. Système de récompenses XP basé sur le suivi du poids, intégration d'APIs fitness et nutrition pour un suivi santé complet. Conception UI/UX et logique de la page d'accueil.",
+          "Application mobile de fitness gamifiée développée avec Flutter convertissant les progrès en récompenses XP. Intégration d'APIs fitness et nutrition pour un suivi santé complet. Développement collaboratif d'un algorithme de suivi du poids et d'un tableau de bord dynamique.",
         date: "2025",
       },
 
@@ -269,12 +269,12 @@ export const translations = {
       seeProject: "View website",
       daripredictor: {
         description:
-          "End-to-end real estate price prediction web application for Morocco using advanced Machine Learning. Scraped and cleaned ~20k listings, Stacking Ensemble model with R²=0.842, deployed with Docker, async FastAPI backend and React/Vite frontend.",
+          "Full-stack platform using a Stacking Ensemble model to predict Moroccan real estate values. Scraped and cleaned 20k listings with custom Crawlee spiders and advanced feature engineering. Async FastAPI backend and React/Vite frontend containerized with Docker.",
         date: "2024",
       },
       xpfit: {
         description:
-          "Gamified fitness mobile application developed with Flutter. XP reward system based on weight tracking, integrated fitness and nutrition APIs for comprehensive health tracking. Led UI/UX design and home page logic.",
+          "Gamified fitness mobile application developed with Flutter that converts physical progress into XP rewards. Integrated fitness and nutrition APIs for comprehensive health monitoring. Collaborative development of a custom weight-tracking algorithm and dashboard.",
         date: "2025",
       },
 
