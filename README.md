@@ -1,57 +1,50 @@
 # Badr Laklach – Portfolio
 
-<img src="public/preview.png" alt="Aperçu du site" width="100%" style="margin-bottom: 1rem;" />
+<img src="public/preview.png" alt="Website Preview" width="100%" style="margin-bottom: 1rem;" />
 
-## 🚀 À propos
+## 🚀 About
 
-Étant étudiant en BUT Métiers du Multimédia et de l'Internet à l'IUT d'Angoulême, ce portfolio présente mes projets, compétences et expériences dans le domaine du développement web et du design.
+Currently a 4th-year student in Software Engineering and Intelligent Systems at ENSAM Meknès. This portfolio showcases my projects, skills, and experiences in software engineering, mobile & web development, and AI/ML.
 
-## 🛠️ Stack technique
+## 🛠️ Technical Stack
 
-- **Framework** : Next.js 16 (App Router)
-- **Langage** : TypeScript
-- **Style** : Tailwind CSS 4
-- **Animations** : Three.js (React Three Fiber)
-- **Composants UI** : Radix UI (shadcn/ui)
-- **Formulaire** : Nodemailer pour l'envoi d'emails
-- **i18n** : Détection automatique français/anglais
-- **Déploiement** : Vercel
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Style**: Tailwind CSS 4
+- **Animations**: Three.js (React Three Fiber)
+- **UI Components**: Radix UI (shadcn/ui)
+- **Emailing**: Nodemailer
+- **i18n**: Automatic French/English detection
+- **Deployment**: Vercel
 
-## ✨ Fonctionnalités
+## ✨ Features
 
-- **Animations 3D** : Effets de fond avec Three.js
-- **Interface bilingue** : Détection automatique de la langue du navigateur (FR/EN)
-- **Design responsive** : Adapté mobile, tablette et desktop
-- **Mode sombre/clair** : Thème adaptatif avec persistance
-- **Formulaire de contact** : Envoi d'emails avec template personnalisé
-- **SEO optimisé** : Métadonnées, sitemap, robots.txt, JSON-LD
-- **Pages légales** : Mentions légales et politique de confidentialité
-- **Analytics** : Vercel Analytics intégré
+- **3D Animations**: Background effects using Three.js.
+- **Bilingual Interface**: Automatic browser language detection (FR/EN).
+- **Responsive Design**: Optimized for mobile, tablet, and desktop.
+- **Dark/Light Mode**: Adaptive theme with persistence.
+- **Contact Form**: Email sending with custom templates.
+- **SEO Optimized**: Metadata, sitemap, robots.txt, JSON-LD.
+- **Legal Pages**: Professional legal notices and privacy policy.
 
-## 🌍 Internationalisation
+## 🌍 Internationalization
 
-Le site détecte automatiquement la langue du navigateur :
-- 🇫🇷 Français si le navigateur est en français
-- 🇬🇧 Anglais dans tous les autres cas
+The site automatically detects the browser's language:
+- 🇫🇷 French if the browser is set to French.
+- 🇬🇧 English for all other cases.
 
-Les traductions sont gérées via `lib/translations.ts` et le hook `useLanguage()`.
+Translations are managed via `lib/translations.ts` and the `useLanguage()` hook.
 
-## 🌐 En ligne
+## 🌐 Online
 
-**URL du site** : [https://vgil.fr](https://vgil.fr)
+**Website URL**: [https://badr-portfolio.vercel.app](https://badr-portfolio.vercel.app) (Update with your actual URL)
 
-Le site est déployé automatiquement sur Vercel à chaque push sur la branche `main`.
+## 👤 Author
 
-## 📄 Pages légales
-
-- [Mentions légales](https://vgil.fr/mentions-legales)
-- [Politique de confidentialité](https://vgil.fr/politique-confidentialite)
-
-## 👤 Auteur
-
-- [Valentin Gil](https://vgil.fr)
-- [LinkedIn](https://www.linkedin.com/in/valentin-gil/)
+- **Badr Laklach**
+- [LinkedIn](https://linkedin.com/in/badr-laklach-6a45602b7)
+- [GitHub](https://github.com/BadrLaklach)
 
 ---
 
-© 2026 Valentin Gil. Tous droits réservés.
+© 2026 Badr Laklach. All rights reserved.
