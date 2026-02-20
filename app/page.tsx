@@ -4,6 +4,7 @@ import { Suspense, useState } from "react";
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Experience from "./components/Experience";
 import { ThemeProvider } from "./components/theme-provider";
 import LazyBeams from "./components/LazyBeams";
 import ProjectCard from "./components/ProjectCard";

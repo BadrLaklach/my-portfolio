@@ -118,6 +118,19 @@ export default function Navbar() {
                       </li>
                     </Link>
                     <Link
+                      href={`/#${t.sections.experience}`}
+                      className="relative overflow-hidden px-4 py-2 rounded-full text-sm font-medium text-gray-700 dark:text-gray-200 transition-all duration-300 group"
+                    >
+                      <li className="group overflow-hidden relative whitespace-nowrap">
+                        <div className="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[125%] group-hover:skew-y-8">
+                          {t.nav.experience}
+                        </div>
+                        <div className="absolute top-0 left-0 translate-y-[125%] skew-y-8 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
+                          {t.nav.experience}
+                        </div>
+                      </li>
+                    </Link>
+                    <Link
                       href={`/#${t.sections.projects}`}
                       className="relative overflow-hidden px-4 py-2 rounded-full text-sm font-medium text-gray-700 dark:text-gray-200 transition-all duration-300 group"
                     >
@@ -179,6 +192,25 @@ export default function Navbar() {
                         </div>
                         <div className="absolute top-0 left-0 translate-y-[125%] skew-y-8 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
                           {t.nav.about}
+                        </div>
+                      </li>
+                    </a>
+                    <a
+                      href={`#${t.sections.experience}`}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        document
+                          .querySelector(`#${t.sections.experience}`)
+                          ?.scrollIntoView({ behavior: "smooth" });
+                      }}
+                      className="relative overflow-hidden px-4 py-2 rounded-full text-sm font-medium text-gray-700 dark:text-gray-200 transition-all duration-300 group"
+                    >
+                      <li className="group overflow-hidden relative whitespace-nowrap">
+                        <div className="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[125%] group-hover:skew-y-8">
+                          {t.nav.experience}
+                        </div>
+                        <div className="absolute top-0 left-0 translate-y-[125%] skew-y-8 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
+                          {t.nav.experience}
                         </div>
                       </li>
                     </a>
@@ -248,25 +280,22 @@ export default function Navbar() {
                 </span>
                 <div className="flex flex-col justify-between w-6 h-5">
                   <span
-                    className={`block h-[2px] w-full bg-current transform transition-all duration-300 ease-in-out ${
-                      isBurgerAnimated
-                        ? "rotate-45 translate-y-[9px]"
-                        : "rotate-0 translate-y-0"
-                    }`}
+                    className={`block h-[2px] w-full bg-current transform transition-all duration-300 ease-in-out ${isBurgerAnimated
+                      ? "rotate-45 translate-y-[9px]"
+                      : "rotate-0 translate-y-0"
+                      }`}
                   />
                   <span
-                    className={`block h-[2px] w-full bg-current transition-all duration-300 ease-in-out ${
-                      isBurgerAnimated
-                        ? "opacity-0 translate-x-6"
-                        : "opacity-100 translate-x-0"
-                    }`}
+                    className={`block h-[2px] w-full bg-current transition-all duration-300 ease-in-out ${isBurgerAnimated
+                      ? "opacity-0 translate-x-6"
+                      : "opacity-100 translate-x-0"
+                      }`}
                   />
                   <span
-                    className={`block h-[2px] w-full bg-current transform transition-all duration-300 ease-in-out ${
-                      isBurgerAnimated
-                        ? "-rotate-45 -translate-y-[9px]"
-                        : "rotate-0 translate-y-0"
-                    }`}
+                    className={`block h-[2px] w-full bg-current transform transition-all duration-300 ease-in-out ${isBurgerAnimated
+                      ? "-rotate-45 -translate-y-[9px]"
+                      : "rotate-0 translate-y-0"
+                      }`}
                   />
                 </div>
               </button>
@@ -277,16 +306,14 @@ export default function Navbar() {
 
       {isMenuOpen && (
         <div
-          className={`md:hidden fixed inset-0 z-40 bg-gray-50 dark:bg-[#101010] ${
-            isClosing ? "animate-fade-out" : "animate-fade-in"
-          }`}
+          className={`md:hidden fixed inset-0 z-40 bg-gray-50 dark:bg-[#101010] ${isClosing ? "animate-fade-out" : "animate-fade-in"
+            }`}
           role="menu"
           aria-label="Menu mobile"
         >
           <div
-            className={`flex flex-col items-center justify-center h-screen ${
-              isClosing ? "animate-slide-down" : "animate-slide-up"
-            }`}
+            className={`flex flex-col items-center justify-center h-screen ${isClosing ? "animate-slide-down" : "animate-slide-up"
+              }`}
           >
             <ul className="space-y-8 text-center">
               {isLegalPage ? (
@@ -307,6 +334,16 @@ export default function Navbar() {
                       role="menuitem"
                     >
                       {t.nav.about}
+                    </Link>
+                  </li>
+                  <li role="none" className="animate-fade-in-delay-2">
+                    <Link
+                      href={`/#${t.sections.experience}`}
+                      className="text-3xl font-bold text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-all duration-300 hover:scale-110 inline-block"
+                      onClick={handleLinkClick}
+                      role="menuitem"
+                    >
+                      {t.nav.experience}
                     </Link>
                   </li>
                   <li role="none" className="animate-fade-in-delay-3">
@@ -362,6 +399,22 @@ export default function Navbar() {
                   </li>
                   <li role="none" className="animate-fade-in-delay-3">
                     <a
+                      href={`#${t.sections.experience}`}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        document
+                          .querySelector(`#${t.sections.experience}`)
+                          ?.scrollIntoView({ behavior: "smooth" });
+                        handleLinkClick();
+                      }}
+                      className="text-3xl font-bold text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-all duration-300 hover:scale-110 inline-block"
+                      role="menuitem"
+                    >
+                      {t.nav.experience}
+                    </a>
+                  </li>
+                  <li role="none" className="animate-fade-in-delay-4">
+                    <a
                       href={`#${t.sections.projects}`}
                       onClick={(e) => {
                         e.preventDefault();
@@ -396,8 +449,9 @@ export default function Navbar() {
               )}
             </ul>
           </div>
-        </div>
-      )}
+        </div >
+      )
+      }
     </>
   );
 }
