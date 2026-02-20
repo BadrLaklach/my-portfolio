@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import { ThemeProvider } from "./components/theme-provider";
 import LazyBeams from "./components/LazyBeams";
 import ProjectCard from "./components/ProjectCard";
+import TechSlider from "./components/TechSlider";
 import { useLanguage } from "@/lib/useLanguage";
 
 export default function Home() {
@@ -532,6 +533,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <TechSlider />
 
         <section
           id={t.sections.contact}
