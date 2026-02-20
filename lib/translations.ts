@@ -58,7 +58,7 @@ export const translations = {
       daripredictor: {
         description:
           "Plateforme full-stack utilisant un modèle d'ensemble Stacking pour prédire les prix de l'immobilier au Maroc. Scraping et nettoyage de 20k annonces via Crawlee, avec ingénierie de caractéristiques avancée. Backend FastAPI async et frontend React/Vite conteneurisés sous Docker.",
-        date: "2024",
+        date: "2026",
       },
       xpfit: {
         description:
