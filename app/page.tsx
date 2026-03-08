@@ -533,7 +533,7 @@ export default function Home() {
           </div>
         </section>
 
-        <TechSlider />
+        <TechGrid />
 
         <section
           id={t.sections.contact}
