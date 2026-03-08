@@ -2,10 +2,17 @@
 
 import { useLanguage } from "@/lib/useLanguage";
 
-const technologies = [
+type Technology = {
+    name: string;
+    icon: string;
+    invertInDark: boolean;
+    customUrl?: string;
+};
+
+const technologies: Technology[] = [
     // Languages
     { name: "Python", icon: "python", invertInDark: false },
-    { name: "Java", icon: "java", invertInDark: false },
+    { name: "Java", icon: "java", invertInDark: false, customUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" },
     { name: "C++", icon: "cplusplus", invertInDark: false },
     { name: "JavaScript", icon: "javascript", invertInDark: false },
     { name: "TypeScript", icon: "typescript", invertInDark: false },
@@ -33,7 +40,7 @@ const technologies = [
     { name: "PostgreSQL", icon: "postgresql", invertInDark: false },
     { name: "MySQL", icon: "mysql", invertInDark: false },
     { name: "MongoDB", icon: "mongodb", invertInDark: false },
-    { name: "Oracle", icon: "oracle", invertInDark: false },
+    { name: "Oracle", icon: "oracle", invertInDark: false, customUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" },
     { name: "Supabase", icon: "supabase", invertInDark: false },
     { name: "Firebase", icon: "firebase", invertInDark: false },
 
@@ -72,7 +79,7 @@ export default function TechGrid() {
                             {/* Icon Container with Hover Greyscale to Color effect */}
                             <div className="relative w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-110">
                                 <img
-                                    src={`https://cdn.simpleicons.org/${tech.icon}`}
+                                    src={tech.customUrl || `https://cdn.simpleicons.org/${tech.icon}`}
                                     alt={tech.name}
                                     className={`w-full h-full object-contain ${tech.invertInDark ? 'dark:invert group-hover:dark:invert-0' : ''}`}
                                 />
