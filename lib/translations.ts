@@ -3,6 +3,7 @@ export const translations = {
     sections: {
       about: "a-propos",
       experience: "experience",
+      certifications: "certifications",
       projects: "projets",
       techStack: "technologies",
       contact: "contact",
@@ -12,6 +13,7 @@ export const translations = {
       home: "Accueil",
       about: "À propos",
       experience: "Expérience",
+      certifications: "Certifications",
       projects: "Projets",
       contact: "Contact",
       modeToggle: "Basculer entre le thème clair et sombre",
@@ -57,18 +59,48 @@ export const translations = {
     },
     experience: {
       title: "Expérience",
-      medyouin: {
-        company: "Med You In",
-        role: "Stagiaire Développeur Mobile",
-        location: "Meknès, Maroc (Sur site)",
-        date: "Juil 2025 – Août 2025",
-        achievements: [
-          "Développement de deux applications Flutter de production (Interface Admin RH & E-commerce) avec une stabilité entreprise et des temps de lancement rapides (< 3s).",
-          "Implémentation d'une authentification sécurisée via Supabase (PostgreSQL + Auth) et Google OAuth 2.0 ; synchronisation des données via Clean Architecture.",
-          "Gestion d'état avec GetX, intégration Firebase Cloud Messaging et création d'un tableau de bord analytique RH automatisé.",
-        ],
-        link: "https://www.medyouin.com/",
-      },
+      items: [
+        {
+          id: "medyouin",
+          company: "Med You In",
+          role: "Stagiaire Développeur Mobile",
+          location: "Meknès, Maroc (Sur site)",
+          date: "Juil 2025 – Juil 2025",
+          achievements: [
+            "Développement de deux applications mobiles complètes avec Flutter durant un stage intensif centré sur des solutions métier réelles.",
+            "MEDYOUIN HR Admin Interface - Système de gestion RH avec tableau de bord analytique, gestion des employés et traitement des paiements.",
+            "MEDYOUTEK E-commerce App - Application e-commerce complète avec authentification Supabase, synchronisation en temps réel et fonctionnalités d'achat.",
+            "Stack Technique : Flutter, Dart, GetX, Clean Architecture, Supabase (PostgreSQL, Auth, Storage), Google OAuth 2.0, Firebase Cloud Messaging.",
+            "Principales réalisations : livraison des applications fonctionnelles conformes aux maquettes, systèmes d'authentification multi-fournisseurs sécurisés, performances optimisées (< 3s)."
+          ],
+          link: "https://www.medyouin.com/",
+        },
+        {
+          id: "gadzit",
+          company: "Club Informatique A&M | Gadz'IT",
+          role: "Membre",
+          location: "Meknès, Maroc (Hybride)",
+          date: "Janv 2025 - Présent",
+          achievements: [
+            "Membre actif du pôle Intelligence Artificielle et Cybersécurité à l'ENSAM Meknès.",
+            "Participation aux ateliers, projets collaboratifs et sessions de partage de connaissances sur les technologies émergentes, le hacking éthique, le Machine Learning et la sécurité numérique.",
+            "Développement des compétences techniques tout en restant connecté avec une communauté passionnée par l'innovation.",
+            "Compétences : Python, IA, MLOps, HTML5, Cybersécurité, Développement web."
+          ],
+        },
+        {
+          id: "fame",
+          company: "Forum Arts & Métiers Entreprises - FAME",
+          role: "Membre de l’équipe de gestion",
+          location: "Maroc (Hybride)",
+          date: "Janv 2023 - Avr 2023",
+          achievements: [
+            "Membre responsable de l'organisation des \"Salons de Recrutement\" lors de l'édition FORUM 21 à l'ENSAM Meknès.",
+            "Événement rassemblant des entreprises de renom (Yazaki, JESA, etc.) offrant des opportunités de networking et de carrière pour les étudiants.",
+            "Compétences : Travail d'équipe, Communication, Leadership d'équipe, Résilience."
+          ],
+        }
+      ]
     },
     projects: {
       title: "Projets",
@@ -84,6 +116,40 @@ export const translations = {
         date: "2025",
       },
 
+    },
+    certifications: {
+      title: "Certifications",
+      items: [
+        {
+          id: "oci-ds",
+          title: "Oracle Cloud Infrastructure 2025 Certified Data Science Professional",
+          issuer: "Oracle",
+          date: "Émise le oct. 2025 · Expire le oct. 2027",
+          credentialId: "ID: 322792597OCI25DSOCP",
+          description: "Certifié en Data Science sur Oracle Cloud Infrastructure. Compétences avancées en Python, développement de modèles ML, ingénierie de données et déploiement d'IA sur le cloud. Expérience en MLOps, automatisation et workflows de data science de bout en bout.",
+          skills: "Compétences : Intelligence artificielle (IA)",
+          image: "/my-portfolio/certifications/oracle data science professional.png"
+        },
+        {
+          id: "oci-fnd",
+          title: "Oracle Cloud Infrastructure 2025 Certified Foundations Associate",
+          issuer: "Oracle",
+          date: "Émise le oct. 2025 · Expire le oct. 2027",
+          credentialId: "ID: 322792597OCI25FNDCFA",
+          description: "Certifié sur les fondations Oracle Cloud Infrastructure. Connaissance approfondie de l'architecture cloud, IAM, mise en réseau, calcul, stockage, bases de données et optimisation des coûts. Forte compréhension des opérations de sécurité.",
+          image: "/my-portfolio/certifications/oci foundations associate.png"
+        },
+        {
+          id: "python-essentials",
+          title: "PCEP – Certified Entry-Level Python Programmer certification",
+          issuer: "Cisco Networking Academy",
+          date: "Délivrée le août 2025",
+          credentialId: "ID: 3b060aea-95bb-407e-b7b0-ae0e9be4b393",
+          description: "Cisco, en collaboration avec OpenEDG Python Institute, vérifie la réussite du cours Python Essentials 1. Connaissance des concepts de programmation, de la syntaxe et de la sémantique de Python.",
+          skills: "Compétences : Conception, Développement, Scripts, Python, Pensée algorithmique, Pensée analytique",
+          image: "/my-portfolio/certifications/python essentials 1.png"
+        }
+      ]
     },
     techStack: {
       title: "Technologies & Outils",
@@ -236,6 +302,7 @@ export const translations = {
     sections: {
       about: "about",
       experience: "experience",
+      certifications: "certifications",
       projects: "projects",
       techStack: "tech-stack",
       contact: "contact",
@@ -245,6 +312,7 @@ export const translations = {
       home: "Home",
       about: "About",
       experience: "Experience",
+      certifications: "Certifications",
       projects: "Projects",
       contact: "Contact",
       modeToggle: "Toggle between light and dark theme",
@@ -290,18 +358,48 @@ export const translations = {
     },
     experience: {
       title: "Experience",
-      medyouin: {
-        company: "Med You In",
-        role: "Mobile Developer Intern",
-        location: "Meknes, Morocco (On-site)",
-        date: "Jul 2025 – Aug 2025",
-        achievements: [
-          "Built two production Flutter apps (HR Admin Interface & E-commerce) with enterprise-grade stability and sub-3s launch times.",
-          "Implemented secure auth with Supabase (PostgreSQL + Auth) and Google OAuth 2.0; real-time data sync via Clean Architecture.",
-          "Managed UI state with GetX; integrated Firebase Cloud Messaging and built automated HR analytics dashboard.",
-        ],
-        link: "https://www.medyouin.com/",
-      },
+      items: [
+        {
+          id: "medyouin",
+          company: "Med You In",
+          role: "Mobile Developer",
+          location: "Meknes, Morocco (On-site)",
+          date: "Jul 2025 – Jul 2025",
+          achievements: [
+            "Developed two complete mobile applications using Flutter during an intensive internship focused on real-world business solutions.",
+            "MEDYOUIN HR Admin Interface - HR management system with dashboard analytics, employee management, and payment processing.",
+            "MEDYOUTEK E-commerce App - Full e-commerce application with Supabase authentication, real-time data sync, and shopping functionality.",
+            "Technical Stack: Flutter, Dart, GetX, Clean Architecture, Supabase (PostgreSQL, Auth, Storage), Google OAuth 2.0, Firebase Cloud Messaging.",
+            "Key Achievements: Delivered fully functional applications matching design specifications, implemented secure multi-provider authentication systems, optimized performance (sub-3s load times)."
+          ],
+          link: "https://www.medyouin.com/",
+        },
+        {
+          id: "gadzit",
+          company: "Club Informatique A&M | Gadz'IT",
+          role: "Member",
+          location: "Meknes, Morocco (Hybrid)",
+          date: "Jan 2025 - Present",
+          achievements: [
+            "Active member of the Artificial Intelligence and Cybersecurity pole at ENSAM Meknes.",
+            "Participated in workshops, collaborative projects, and knowledge-sharing sessions focused on emerging technologies, ethical hacking, Machine Learning, and digital security.",
+            "Deepened technical skills while staying connected with a community passionate about innovation and tech excellence.",
+            "Skills: Python, AI, MLOps, HTML5, Cybersecurity, Web Development."
+          ],
+        },
+        {
+          id: "fame",
+          company: "Forum Arts & Métiers Entreprises - FAME",
+          role: "Management Team Member",
+          location: "Morocco (Hybrid)",
+          date: "Jan 2023 - Apr 2023",
+          achievements: [
+            "Responsible for organizing the \"Les Salons de Recrutement\" during the FORUM 21 edition at ENSAM Meknes.",
+            "Event bringing together renowned companies (Yazaki, JESA, etc.) to provide valuable networking and career opportunities for students.",
+            "Skills: Teamwork, Communication, Team Leadership, Resilience."
+          ],
+        }
+      ]
     },
     projects: {
       title: "Projects",
@@ -317,6 +415,40 @@ export const translations = {
         date: "2025",
       },
 
+    },
+    certifications: {
+      title: "Certifications",
+      items: [
+        {
+          id: "oci-ds",
+          title: "Oracle Cloud Infrastructure 2025 Certified Data Science Professional",
+          issuer: "Oracle",
+          date: "Issued Oct 2025 · Expires Oct 2027",
+          credentialId: "Credential ID 322792597OCI25DSOCP",
+          description: "Certified in Oracle Cloud Infrastructure Data Science, showcasing advanced skills in Python, ML model development, data engineering, and cloud-based AI deployment. Experienced in MLOps, automation, and end-to-end data science workflows on OCI.",
+          skills: "Skills: Artificial Intelligence (AI)",
+          image: "/my-portfolio/certifications/oracle data science professional.png"
+        },
+        {
+          id: "oci-fnd",
+          title: "Oracle Cloud Infrastructure 2025 Certified Foundations Associate",
+          issuer: "Oracle",
+          date: "Issued Oct 2025 · Expires Oct 2027",
+          credentialId: "Credential ID 322792597OCI25FNDCFA",
+          description: "Certified in Oracle Cloud Infrastructure Foundations, showcasing knowledge of cloud architecture, identity and access management, networking, compute, storage, databases, and cost optimization. Strong understanding of cloud computing concepts, OCI services, and security operations.",
+          image: "/my-portfolio/certifications/oci foundations associate.png"
+        },
+        {
+          id: "python-essentials",
+          title: "PCEP – Certified Entry-Level Python Programmer",
+          issuer: "Cisco Networking Academy",
+          date: "Issued Aug 2025",
+          credentialId: "Credential ID 3b060aea-95bb-407e-b7b0-ae0e9be4b393",
+          description: "Cisco, in collaboration with OpenEDG Python Institute, verifies successfully completed the Python Essentials 1 course. Knowledge of programming concepts, Python syntax/semantics, and resolving challenges using the standard library.",
+          skills: "Skills: Design, Develop, Debug Scripts, Procedural Programming, Python, Algorithmic Thinking",
+          image: "/my-portfolio/certifications/python essentials 1.png"
+        }
+      ]
     },
     techStack: {
       title: "Technologies & Tools",

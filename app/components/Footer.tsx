@@ -55,6 +55,14 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
+                      href={`/#${t.sections.certifications}`}
+                      className="text-sm sm:text-base text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors"
+                    >
+                      {t.nav.certifications}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       href={`/#${t.sections.projects}`}
                       className="text-sm sm:text-base text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
                     >
@@ -110,6 +118,20 @@ export default function Footer() {
                       className="text-sm sm:text-base text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
                     >
                       {t.nav.experience}
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={`#${t.sections.certifications}`}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        document
+                          .querySelector(`#${t.sections.certifications}`)
+                          ?.scrollIntoView({ behavior: "smooth" });
+                      }}
+                      className="text-sm sm:text-base text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
+                    >
+                      {t.nav.certifications}
                     </a>
                   </li>
                   <li>

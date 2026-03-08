@@ -131,6 +131,19 @@ export default function Navbar() {
                       </li>
                     </Link>
                     <Link
+                      href={`/#${t.sections.certifications}`}
+                      className="relative overflow-hidden px-4 py-2 rounded-full text-sm font-medium text-gray-700 dark:text-gray-200 transition-all duration-300 group"
+                    >
+                      <li className="group overflow-hidden relative whitespace-nowrap">
+                        <div className="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[125%] group-hover:skew-y-8">
+                          {t.nav.certifications}
+                        </div>
+                        <div className="absolute top-0 left-0 translate-y-[125%] skew-y-8 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
+                          {t.nav.certifications}
+                        </div>
+                      </li>
+                    </Link>
+                    <Link
                       href={`/#${t.sections.projects}`}
                       className="relative overflow-hidden px-4 py-2 rounded-full text-sm font-medium text-gray-700 dark:text-gray-200 transition-all duration-300 group"
                     >
@@ -211,6 +224,25 @@ export default function Navbar() {
                         </div>
                         <div className="absolute top-0 left-0 translate-y-[125%] skew-y-8 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
                           {t.nav.experience}
+                        </div>
+                      </li>
+                    </a>
+                    <a
+                      href={`#${t.sections.certifications}`}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        document
+                          .querySelector(`#${t.sections.certifications}`)
+                          ?.scrollIntoView({ behavior: "smooth" });
+                      }}
+                      className="relative overflow-hidden px-4 py-2 rounded-full text-sm font-medium text-gray-700 dark:text-gray-200 transition-all duration-300 group"
+                    >
+                      <li className="group overflow-hidden relative whitespace-nowrap">
+                        <div className="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[125%] group-hover:skew-y-8">
+                          {t.nav.certifications}
+                        </div>
+                        <div className="absolute top-0 left-0 translate-y-[125%] skew-y-8 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
+                          {t.nav.certifications}
                         </div>
                       </li>
                     </a>
@@ -348,6 +380,16 @@ export default function Navbar() {
                   </li>
                   <li role="none" className="animate-fade-in-delay-3">
                     <Link
+                      href={`/#${t.sections.certifications}`}
+                      className="text-3xl font-bold text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-all duration-300 hover:scale-110 inline-block"
+                      onClick={handleLinkClick}
+                      role="menuitem"
+                    >
+                      {t.nav.certifications}
+                    </Link>
+                  </li>
+                  <li role="none" className="animate-fade-in-delay-3">
+                    <Link
                       href={`/#${t.sections.projects}`}
                       className="text-3xl font-bold text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-all duration-300 hover:scale-110 inline-block"
                       role="menuitem"
@@ -411,6 +453,22 @@ export default function Navbar() {
                       role="menuitem"
                     >
                       {t.nav.experience}
+                    </a>
+                  </li>
+                  <li role="none" className="animate-fade-in-delay-3">
+                    <a
+                      href={`#${t.sections.certifications}`}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        document
+                          .querySelector(`#${t.sections.certifications}`)
+                          ?.scrollIntoView({ behavior: "smooth" });
+                        handleLinkClick();
+                      }}
+                      className="text-3xl font-bold text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-all duration-300 hover:scale-110 inline-block"
+                      role="menuitem"
+                    >
+                      {t.nav.certifications}
                     </a>
                   </li>
                   <li role="none" className="animate-fade-in-delay-4">

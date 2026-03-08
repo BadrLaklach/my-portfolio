@@ -9,6 +9,7 @@ import { ThemeProvider } from "./components/theme-provider";
 import LazyBeams from "./components/LazyBeams";
 import ProjectCard from "./components/ProjectCard";
 import TechGrid from "./components/TechGrid";
+import Certifications from "./components/Certifications";
 import { useLanguage } from "@/lib/useLanguage";
 
 export default function Home() {
@@ -483,6 +484,8 @@ export default function Home() {
         </section>
 
         <Experience />
+
+        <Certifications />
 
         <section
           id={t.sections.projects}
