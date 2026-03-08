@@ -15,54 +15,6 @@ import { useLanguage } from "@/lib/useLanguage";
 export default function Home() {
   const { t } = useLanguage();
 
-  const [formData, setFormData] = useState({
-    nom: "",
-    prenom: "",
-    email: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<
-    "idle" | "success" | "error"
-  >("idle");
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus("idle");
-
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setSubmitStatus("success");
-        setFormData({ nom: "", prenom: "", email: "", message: "" });
-      } else {
-        setSubmitStatus("error");
-      }
-    } catch (error) {
-      console.error("Erreur:", error);
-      setSubmitStatus("error");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
   return (
     <main>
       <ThemeProvider>
@@ -638,86 +590,26 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="lg:col-span-2">
-                <h3 className="text-[2rem] font-semibold text-[#191919] dark:text-white mb-4">
+              <div className="lg:col-span-2 flex flex-col items-center sm:items-start justify-center h-full">
+                <h3 className="text-[2rem] font-semibold text-[#191919] dark:text-white mb-6 text-center sm:text-left">
                   {t.contact.form.title}
                 </h3>
-                <form onSubmit={handleSubmit} className="space-y-2">
-                  <div className="grid grid-cols-2 gap-2">
-                    <input
-                      type="text"
-                      name="nom"
-                      placeholder={t.contact.form.lastName}
-                      value={formData.nom}
-                      onChange={handleChange}
-                      required
-                      className="px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-[#1a1a1a] text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#191919] dark:focus:ring-white transition-shadow"
-                    />
-                    <input
-                      type="text"
-                      name="prenom"
-                      placeholder={t.contact.form.firstName}
-                      value={formData.prenom}
-                      onChange={handleChange}
-                      required
-                      className="px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-[#1a1a1a] text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#191919] dark:focus:ring-white transition-shadow"
-                    />
-                  </div>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder={t.contact.form.email}
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-[#1a1a1a] text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#191919] dark:focus:ring-white transition-shadow"
-                  />
-                  <textarea
-                    name="message"
-                    placeholder={t.contact.form.message}
-                    rows={6}
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-[#1a1a1a] text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#191919] dark:focus:ring-white transition-shadow resize-none"
-                  ></textarea>
-
-                  <div className="flex items-center gap-4">
-                    <button
-                      type="submit"
-                      disabled={isSubmitting}
-                      className="inline-flex items-center gap-2 px-6 py-3 bg-[#191919] dark:bg-white text-white dark:text-[#191919] rounded-lg font-semibold hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
-                    >
-                      <span className="translate-y-[-1px]">
-                        {isSubmitting ? t.contact.form.sending : t.contact.form.send}
-                      </span>
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M14 5l7 7m0 0l-7 7m7-7H3"
-                        />
-                      </svg>
-                    </button>
-
-                    {submitStatus === "success" && (
-                      <p className="text-green-600 dark:text-green-400 text-sm font-medium">
-                        {t.contact.form.success}
-                      </p>
-                    )}
-                    {submitStatus === "error" && (
-                      <p className="text-red-600 dark:text-red-400 text-sm font-medium">
-                        {t.contact.form.error}
-                      </p>
-                    )}
-                  </div>
-                </form>
+                <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-lg text-center sm:text-left text-lg">
+                  {t.contact.form.description}
+                </p>
+                <a
+                  href="mailto:badrlaklach27@gmail.com"
+                  className="inline-flex items-center gap-3 px-8 py-4 bg-[#191919] dark:bg-white text-white dark:text-[#191919] rounded-xl font-bold hover:opacity-90 hover:scale-105 transition-all text-lg shadow-lg"
+                >
+                  <svg
+                    className="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 512 512"
+                  >
+                    <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"></path>
+                  </svg>
+                  <span className="translate-y-[-1px]">badrlaklach27@gmail.com</span>
+                </a>
               </div>
             </div>
           </div>
