@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import { ThemeProvider } from "./components/theme-provider";
 import LazyBeams from "./components/LazyBeams";
 import ProjectCard from "./components/ProjectCard";
+import TechGrid from "./components/TechGrid";
 import { useLanguage } from "@/lib/useLanguage";
 
 export default function Home() {
