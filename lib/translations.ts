@@ -4,6 +4,7 @@ export const translations = {
       about: "a-propos",
       experience: "experience",
       projects: "projets",
+      techStack: "technologies",
       contact: "contact",
     },
     nav: {
@@ -83,6 +84,9 @@ export const translations = {
         date: "2025",
       },
 
+    },
+    techStack: {
+      title: "Technologies & Outils",
     },
     contact: {
       title: "Contact",
@@ -233,6 +237,7 @@ export const translations = {
       about: "about",
       experience: "experience",
       projects: "projects",
+      techStack: "tech-stack",
       contact: "contact",
     },
     nav: {
@@ -312,6 +317,9 @@ export const translations = {
         date: "2025",
       },
 
+    },
+    techStack: {
+      title: "Technologies & Tools",
     },
     contact: {
       title: "Contact",

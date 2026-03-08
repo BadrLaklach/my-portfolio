@@ -1,42 +1,83 @@
 "use client";
 
+import { useLanguage } from "@/lib/useLanguage";
+
 const technologies = [
-    { name: "Next.js", icon: "nextdotjs", invertInDark: true },
-    { name: "TypeScript", icon: "typescript", invertInDark: false },
-    { name: "Tailwind CSS", icon: "tailwindcss", invertInDark: false },
-    { name: "Flutter", icon: "flutter", invertInDark: false },
+    // Languages
     { name: "Python", icon: "python", invertInDark: false },
+    { name: "Java", icon: "java", invertInDark: false },
+    { name: "C++", icon: "cplusplus", invertInDark: false },
+    { name: "JavaScript", icon: "javascript", invertInDark: false },
+    { name: "TypeScript", icon: "typescript", invertInDark: false },
+    { name: "Dart", icon: "dart", invertInDark: false },
+    { name: "SQL", icon: "sqlite", invertInDark: false },
+    { name: "Bash", icon: "gnubash", invertInDark: true },
+
+    // Mobile & Web
+    { name: "Flutter", icon: "flutter", invertInDark: false },
+    { name: "React", icon: "react", invertInDark: false },
+    { name: "Next.js", icon: "nextdotjs", invertInDark: true },
     { name: "FastAPI", icon: "fastapi", invertInDark: false },
-    { name: "Docker", icon: "docker", invertInDark: false },
+    { name: "Node.js", icon: "nodedotjs", invertInDark: false },
+    { name: "Express", icon: "express", invertInDark: true },
+    { name: "Spring", icon: "spring", invertInDark: false },
+    { name: "Tailwind CSS", icon: "tailwindcss", invertInDark: false },
+
+    // ML / Data Science
+    { name: "TensorFlow", icon: "tensorflow", invertInDark: false },
+    { name: "Scikit-Learn", icon: "scikitlearn", invertInDark: false },
+    { name: "Pandas", icon: "pandas", invertInDark: true },
+    { name: "NumPy", icon: "numpy", invertInDark: false },
+
+    // Databases
     { name: "PostgreSQL", icon: "postgresql", invertInDark: false },
+    { name: "MySQL", icon: "mysql", invertInDark: false },
+    { name: "MongoDB", icon: "mongodb", invertInDark: false },
+    { name: "Oracle", icon: "oracle", invertInDark: false },
     { name: "Supabase", icon: "supabase", invertInDark: false },
     { name: "Firebase", icon: "firebase", invertInDark: false },
-    { name: "React", icon: "react", invertInDark: false },
-    { name: "Three.js", icon: "threedotjs", invertInDark: true },
+
+    // DevOps & Tools
     { name: "Git", icon: "git", invertInDark: false },
     { name: "GitHub", icon: "github", invertInDark: true },
+    { name: "Docker", icon: "docker", invertInDark: false },
+    { name: "Android Studio", icon: "androidstudio", invertInDark: false },
 ];
 
 export default function TechGrid() {
+    const { t } = useLanguage();
+
     return (
-        <section className="pb-16 sm:pb-32 bg-gray-50 dark:bg-[#121212]">
+        <section
+            id={t.sections.techStack}
+            className="pt-32 pb-8 bg-gray-50 dark:bg-[#121212]"
+        >
             <div className="max-w-7xl mx-auto px-6 sm:px-12">
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4 sm:gap-6 mt-12 sm:mt-16">
+                <div className="mb-12 sm:mb-16">
+                    <div className="flex items-end gap-6 sm:gap-8">
+                        <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white whitespace-nowrap">
+                            {t.techStack.title}
+                        </h2>
+                        <div className="h-[3px] w-full bg-gray-900/30 dark:bg-white/30 mb-2"></div>
+                    </div>
+                </div>
+
+                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-3 sm:gap-4 mt-8 sm:mt-12">
                     {technologies.map((tech) => (
                         <div
                             key={tech.name}
-                            className="bg-white dark:bg-[#1a1a1a] border border-gray-100 dark:border-gray-800 rounded-2xl p-4 sm:p-6 flex flex-col items-center justify-center gap-4 group hover:shadow-xl hover:-translate-y-1 transition-all duration-300 hover:border-gray-200 dark:hover:border-gray-700"
+                            className="bg-white dark:bg-[#1a1a1a] border border-gray-100 dark:border-gray-800 rounded-xl p-3 sm:p-4 flex flex-col items-center justify-center gap-3 group hover:shadow-lg hover:-translate-y-1 transition-all duration-300 hover:border-gray-200 dark:hover:border-gray-700"
                             title={tech.name}
                         >
                             {/* Icon Container with Hover Greyscale to Color effect */}
-                            <div className="relative w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-110">
+                            <div className="relative w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-110">
                                 <img
                                     src={`https://cdn.simpleicons.org/${tech.icon}`}
                                     alt={tech.name}
                                     className={`w-full h-full object-contain ${tech.invertInDark ? 'dark:invert group-hover:dark:invert-0' : ''}`}
                                 />
                             </div>
-                            <span className="text-sm sm:text-base font-medium text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-300 text-center">
+                            <span className="text-xs sm:text-sm font-medium text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-300 text-center line-clamp-1">
                                 {tech.name}
                             </span>
                         </div>
