@@ -66,7 +66,7 @@ export default function Experience() {
                     {t.experience.items.map((item) => (
                         <div key={item.id} className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
                             <div className="flex-shrink-0 w-full md:w-auto">
-                                <div className="relative w-full h-48 sm:w-72 sm:h-48 flex items-center justify-center group transition-all duration-300 bg-white dark:bg-[#1a1a1a] rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md overflow-hidden">
+                                <div className="relative w-full h-48 sm:w-72 sm:h-48 flex items-center justify-center group transition-all duration-300">
                                     {getIcon(item.id)}
                                 </div>
                             </div>
