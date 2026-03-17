@@ -117,7 +117,7 @@ export const translations = {
       },
       smartoffice: {
         description: "Simulation réseau et IoT d'un environnement de bureau intelligent utilisant Cisco Packet Tracer. Intégration de capteurs physiques, automatisation CVC, contrôle d'accès RFID et sécurité incendie. Logique edge computing centralisée avec des scripts Python orientés MCU.",
-        date: "2024",
+        date: "2026",
       },
 
     },
@@ -404,7 +404,7 @@ export const translations = {
       daripredictor: {
         description:
           "Full-stack platform using a Stacking Ensemble model to predict Moroccan real estate values. Scraped and cleaned 20k listings with custom Crawlee spiders and advanced feature engineering. Async FastAPI backend and React/Vite frontend containerized with Docker.",
-        date: "2024",
+        date: "2026",
       },
       xpfit: {
         description:
@@ -413,7 +413,7 @@ export const translations = {
       },
       smartoffice: {
         description: "IoT and network simulation of a smart office environment using Cisco Packet Tracer. Features integration of physical sensors, HVAC automation, secure RFID access control, and fire safety systems. Centralized edge computing logic implemented via Python scripts on MCUs.",
-        date: "2024",
+        date: "2026",
       },
 
     },

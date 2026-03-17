@@ -465,7 +465,7 @@ export default function Home() {
                   description={t.projects.daripredictor.description}
                   date={t.projects.daripredictor.date}
                   tags={["Python", "ANN", "FastAPI", "React", "Docker"]}
-                  siteUrl="https://github.com/BadrLaklach"
+                  siteUrl="https://github.com/BadrLaklach/DariPredictor-ML"
                   imageFit="contain"
                 />
               </div>
@@ -478,7 +478,7 @@ export default function Home() {
                   description={t.projects.xpfit.description}
                   date={t.projects.xpfit.date}
                   tags={["Flutter", "REST APIs", "UI/UX Design"]}
-                  siteUrl="https://github.com/BadrLaklach"
+                  siteUrl="https://github.com/BadrLaklach/MOBILE_FITNESS_FLUTTER_APP_XP_FIT"
                   isVideo={true}
                   thumbnail="/my-portfolio/projects/xpfit/thumbnail.png"
                   videoAspectRatio="aspect-[9/19]"
@@ -493,7 +493,7 @@ export default function Home() {
                   description={t.projects.smartoffice.description}
                   date={t.projects.smartoffice.date}
                   tags={["Packet Tracer", "IoT", "Networking", "Python"]}
-                  siteUrl="https://github.com/badr-laklach/IoT_Smart_Office_Packet_Tracer_Sim"
+                  siteUrl="https://github.com/BadrLaklach/IoT_Smart_Office_Packet_Tracer_Sim"
                   imageFit="contain"
                 />
               </div>
