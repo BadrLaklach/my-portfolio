@@ -484,6 +484,19 @@ export default function Home() {
                   videoAspectRatio="aspect-[9/19]"
                 />
               </div>
+              <div className="self-start">
+                <ProjectCard
+                  images={[
+                    "/my-portfolio/projects/smartoffice/topology.png",
+                  ]}
+                  title="Smart Office IoT"
+                  description={t.projects.smartoffice.description}
+                  date={t.projects.smartoffice.date}
+                  tags={["Packet Tracer", "IoT", "Networking", "Python"]}
+                  siteUrl="https://github.com/badr-laklach/IoT_Smart_Office_Packet_Tracer_Sim"
+                  imageFit="contain"
+                />
+              </div>
 
             </div>
           </div>

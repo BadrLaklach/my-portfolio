@@ -115,6 +115,10 @@ export const translations = {
           "Application mobile de fitness gamifiée développée avec Flutter convertissant les progrès en récompenses XP. Intégration d'APIs fitness et nutrition pour un suivi santé complet. Développement collaboratif d'un algorithme de suivi du poids et d'un tableau de bord dynamique.",
         date: "2025",
       },
+      smartoffice: {
+        description: "Simulation réseau et IoT d'un environnement de bureau intelligent utilisant Cisco Packet Tracer. Intégration de capteurs physiques, automatisation CVC, contrôle d'accès RFID et sécurité incendie. Logique edge computing centralisée avec des scripts Python orientés MCU.",
+        date: "2024",
+      },
 
     },
     certifications: {
@@ -406,6 +410,10 @@ export const translations = {
         description:
           "Gamified fitness mobile application developed with Flutter that converts physical progress into XP rewards. Integrated fitness and nutrition APIs for comprehensive health monitoring. Collaborative development of a custom weight-tracking algorithm and dashboard.",
         date: "2025",
+      },
+      smartoffice: {
+        description: "IoT and network simulation of a smart office environment using Cisco Packet Tracer. Features integration of physical sensors, HVAC automation, secure RFID access control, and fire safety systems. Centralized edge computing logic implemented via Python scripts on MCUs.",
+        date: "2024",
       },
 
     },
