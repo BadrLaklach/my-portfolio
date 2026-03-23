@@ -157,6 +157,13 @@ export const translations = {
     },
     techStack: {
       title: "Technologies & Outils",
+      categories: {
+        languages: "Langages de programmation",
+        mobileWeb: "Mobile & Web",
+        dataAi: "Data & Intelligence Artificielle",
+        databases: "Bases de données",
+        devops: "DevOps & Outils",
+      }
     },
     contact: {
       title: "Contact",
@@ -453,6 +460,13 @@ export const translations = {
     },
     techStack: {
       title: "Technologies & Tools",
+      categories: {
+        languages: "Programming Languages",
+        mobileWeb: "Mobile & Web",
+        dataAi: "Data & Artificial Intelligence",
+        databases: "Databases",
+        devops: "DevOps & Tools",
+      }
     },
     contact: {
       title: "Contact",
