@@ -79,7 +79,7 @@ const categorizedTechs: TechCategory[] = [
             { name: "GitHub Actions", icon: "githubactions", invertInDark: true },
             { name: "Linux", icon: "linux", invertInDark: false },
             { name: "Azure", icon: "microsoftazure", invertInDark: false, customUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" },
-            { name: "Oracle Cloud", icon: "oracle", invertInDark: false },
+            { name: "Oracle Cloud", icon: "oracle", invertInDark: false, customUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" },
             { name: "Maven", icon: "apachemaven", invertInDark: false },
             { name: "Postman", icon: "postman", invertInDark: false },
         ]
