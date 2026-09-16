@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/lib/useLanguage";
 
 type Technology = {
@@ -20,6 +21,7 @@ const categorizedTechs: TechCategory[] = [
         items: [
             { name: "Python", icon: "python", invertInDark: false },
             { name: "Java", icon: "java", invertInDark: false, customUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" },
+            { name: "C#", icon: "csharp", invertInDark: false, customUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" },
             { name: "C++", icon: "cplusplus", invertInDark: false },
             { name: "JavaScript", icon: "javascript", invertInDark: false },
             { name: "TypeScript", icon: "typescript", invertInDark: false },
@@ -31,14 +33,16 @@ const categorizedTechs: TechCategory[] = [
     {
         id: "mobileWeb",
         items: [
+            { name: "HTML5", icon: "html5", invertInDark: false },
+            { name: "CSS3", icon: "css3", invertInDark: false, customUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" },
             { name: "Flutter", icon: "flutter", invertInDark: false },
             { name: "React", icon: "react", invertInDark: false },
             { name: "Next.js", icon: "nextdotjs", invertInDark: true },
+            { name: "Vite", icon: "vite", invertInDark: false },
             { name: "FastAPI", icon: "fastapi", invertInDark: false },
-            { name: "Node.js", icon: "nodedotjs", invertInDark: false },
-            { name: "Express", icon: "express", invertInDark: true },
-            { name: "Spring", icon: "spring", invertInDark: false },
+            { name: "Spring Boot", icon: "spring", invertInDark: false },
             { name: "Tailwind CSS", icon: "tailwindcss", invertInDark: false },
+            { name: "Three.js", icon: "threedotjs", invertInDark: true },
         ]
     },
     {
@@ -48,6 +52,7 @@ const categorizedTechs: TechCategory[] = [
             { name: "Scikit-Learn", icon: "scikitlearn", invertInDark: false },
             { name: "Pandas", icon: "pandas", invertInDark: true },
             { name: "NumPy", icon: "numpy", invertInDark: false },
+            { name: "Groq", icon: "groq", invertInDark: false, customUrl: "/my-portfolio/tech/groq.svg" },
         ]
     },
     {
@@ -56,18 +61,34 @@ const categorizedTechs: TechCategory[] = [
             { name: "PostgreSQL", icon: "postgresql", invertInDark: false },
             { name: "MySQL", icon: "mysql", invertInDark: false },
             { name: "MongoDB", icon: "mongodb", invertInDark: false },
+            { name: "SQLite", icon: "sqlite", invertInDark: false },
             { name: "Oracle", icon: "oracle", invertInDark: false, customUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" },
             { name: "Supabase", icon: "supabase", invertInDark: false },
             { name: "Firebase", icon: "firebase", invertInDark: false },
+            { name: "MinIO", icon: "minio", invertInDark: false },
         ]
     },
     {
         id: "devops",
         items: [
+            { name: "Docker", icon: "docker", invertInDark: false },
+            { name: "Kubernetes", icon: "kubernetes", invertInDark: false },
+            { name: "RabbitMQ", icon: "rabbitmq", invertInDark: false },
             { name: "Git", icon: "git", invertInDark: false },
             { name: "GitHub", icon: "github", invertInDark: true },
-            { name: "Docker", icon: "docker", invertInDark: false },
-            { name: "Android Studio", icon: "androidstudio", invertInDark: false },
+            { name: "GitHub Actions", icon: "githubactions", invertInDark: true },
+            { name: "Linux", icon: "linux", invertInDark: false },
+            { name: "Azure", icon: "microsoftazure", invertInDark: false, customUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" },
+            { name: "Oracle Cloud", icon: "oracle", invertInDark: false },
+            { name: "Maven", icon: "apachemaven", invertInDark: false },
+            { name: "Postman", icon: "postman", invertInDark: false },
+        ]
+    },
+    {
+        id: "xr",
+        items: [
+            { name: "Unity", icon: "unity", invertInDark: true },
+            { name: "Meta", icon: "meta", invertInDark: false },
         ]
     }
 ];
@@ -105,9 +126,11 @@ export default function TechGrid() {
                                         title={tech.name}
                                     >
                                         <div className="relative w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-110">
-                                            <img
+                                            <Image
                                                 src={tech.customUrl || `https://cdn.simpleicons.org/${tech.icon}`}
                                                 alt={tech.name}
+                                                fill
+                                                unoptimized
                                                 className={`w-full h-full object-contain ${tech.invertInDark ? 'dark:invert group-hover:dark:invert-0' : ''}`}
                                             />
                                         </div>

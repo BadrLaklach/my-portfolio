@@ -1,11 +1,11 @@
 {
   "name": "Badr Laklach",
   "short_name": "BL",
-  "description": "Étudiant de 2e année en BUT Métiers du Multimédia et de l'Internet à l'IUT d'Angoulême.",
+  "description": "Portfolio of Badr Laklach — applied AI, cloud-native systems, mobile development, full-stack engineering, and XR.",
   "start_url": "/my-portfolio/",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#ffffff",
+  "theme_color": "#121212",
   "icons": [
     {
       "src": "/my-portfolio/favicon.ico",

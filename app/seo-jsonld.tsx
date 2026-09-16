@@ -5,12 +5,12 @@ export const siteStructuredData = {
   url: "https://badrlaklach.github.io/my-portfolio",
   sameAs: [
     "https://github.com/BadrLaklach",
-    "https://linkedin.com/in/badr-laklach-6a45602b7",
+    "https://www.linkedin.com/in/badrlaklach/",
   ],
   jobTitle:
-    "Student in Software Engineering and Intelligent Systems",
+    "Software Engineering & Intelligent Systems Student | AI, Full-Stack & XR Developer",
   description:
-    "Portfolio of Badr Laklach, Software Engineering student at ENSAM Meknès.",
+    "Portfolio of Badr Laklach, a fourth-year Software Engineering and Intelligent Systems student building applied AI, cloud-native, mobile, full-stack, and XR products.",
   worksFor: {
     "@type": "Organization",
     name: "ENSAM Meknès",

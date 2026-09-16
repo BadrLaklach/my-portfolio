@@ -214,7 +214,7 @@ export default function Footer() {
               </p>
               <div className="flex gap-3">
                 <a
-                  href="https://linkedin.com/in/badr-laklach-6a45602b7"
+                  href="https://www.linkedin.com/in/badrlaklach/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-6 h-6 flex items-center justify-center text-gray-900 dark:text-white hover:opacity-60 transition-opacity duration-300"

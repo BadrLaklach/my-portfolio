@@ -33,7 +33,7 @@ export default function NotFound() {
 
           <div className="absolute bottom-8 left-8 flex flex-col gap-3">
             <a
-              href="https://linkedin.com/in/valentin-gil"
+              href="https://www.linkedin.com/in/badrlaklach/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-6 h-6 flex items-center justify-center text-gray-900 dark:text-white hover:opacity-60 transition-opacity duration-300"
@@ -49,7 +49,7 @@ export default function NotFound() {
               </svg>
             </a>
             <a
-              href="https://github.com/valentin-gil"
+              href="https://github.com/BadrLaklach"
               target="_blank"
               rel="noopener noreferrer"
               className="w-6 h-6 flex items-center justify-center text-gray-900 dark:text-white hover:opacity-60 transition-opacity duration-300"
@@ -69,7 +69,7 @@ export default function NotFound() {
               </svg>
             </a>
             <a
-              href="mailto:contact@vgil.fr"
+              href="mailto:badrlaklach27@gmail.com"
               className="w-6 h-6 flex items-center justify-center text-gray-900 dark:text-white hover:opacity-60 transition-opacity duration-300"
               aria-label="Email"
             >

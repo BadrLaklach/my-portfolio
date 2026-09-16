@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useState } from "react";
+import { Suspense } from "react";
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -41,7 +41,7 @@ export default function Home() {
 
           <div className="absolute bottom-8 left-8 flex flex-col gap-3">
             <a
-              href="https://linkedin.com/in/badr-laklach-6a45602b7"
+              href="https://www.linkedin.com/in/badrlaklach/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-6 h-6 flex items-center justify-center text-gray-900 dark:text-white hover:opacity-60 transition-opacity duration-300"
@@ -234,9 +234,34 @@ export default function Home() {
                   Badr Laklach
                 </text>
               </svg>
-              <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-center relative z-10 whitespace-nowrap">
+              <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-center relative z-10 whitespace-nowrap">
                 Badr Laklach
               </h1>
+            </div>
+
+            <div className="relative z-10 flex max-w-3xl flex-col items-center gap-5 px-4 text-center">
+              <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.24em] text-gray-600 dark:text-gray-300">
+                {t.hero.eyebrow}
+              </p>
+              <p className="max-w-2xl text-base leading-relaxed text-gray-700 dark:text-gray-300 sm:text-lg">
+                {t.hero.description}
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-3">
+                <a
+                  href={`#${t.sections.projects}`}
+                  className="rounded-full bg-[#191919] px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:opacity-90 dark:bg-white dark:text-[#191919]"
+                >
+                  {t.hero.primaryCta}
+                </a>
+                <a
+                  href={t.about.cvLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-gray-900/30 bg-white/50 px-6 py-3 text-sm font-semibold text-gray-900 backdrop-blur-sm transition-all hover:-translate-y-0.5 hover:bg-white dark:border-white/30 dark:bg-black/20 dark:text-white dark:hover:bg-black/40"
+                >
+                  {t.hero.secondaryCta}
+                </a>
+              </div>
             </div>
 
             <a
@@ -456,6 +481,47 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
               <div className="self-start">
                 <ProjectCard
+                  images={["/my-portfolio/projects/hawqai/xr-cover.svg"]}
+                  title="HawQ-ai XR / MRAF"
+                  description={t.projects.hawqai.description}
+                  date={t.projects.hawqai.date}
+                  tags={["Unity", "Meta Quest 3", "Meta XR", "OpenXR"]}
+                  siteUrl="https://github.com/AvenzorCode/Headset-app"
+                  imageFit="cover"
+                />
+              </div>
+              <div className="self-start">
+                <ProjectCard
+                  images={[
+                    "/my-portfolio/projects/dokumind/architecture.png",
+                    "/my-portfolio/projects/dokumind/portal.png",
+                    "/my-portfolio/projects/dokumind/chat.png",
+                  ]}
+                  title="DokuMind"
+                  description={t.projects.dokumind.description}
+                  date={t.projects.dokumind.date}
+                  tags={["React", "Spring Boot", "FastAPI", "RAG", "Docker"]}
+                  siteUrl="https://github.com/BadrLaklach/DokuMind"
+                  imageFit="cover"
+                />
+              </div>
+              <div className="self-start">
+                <ProjectCard
+                  images={[
+                    "/my-portfolio/projects/agile/architecture.png",
+                    "/my-portfolio/projects/agile/observability.png",
+                    "/my-portfolio/projects/agile/techstack.png",
+                  ]}
+                  title="Agile Microservices"
+                  description={t.projects.agileMicroservices.description}
+                  date={t.projects.agileMicroservices.date}
+                  tags={["Java", "Spring Boot", "RabbitMQ", "Kubernetes"]}
+                  siteUrl="https://github.com/BadrLaklach/Agile_Microservices"
+                  imageFit="cover"
+                />
+              </div>
+              <div className="self-start">
+                <ProjectCard
                   images={[
                     "/my-portfolio/projects/daripredictor/daripicture1.png",
                     "/my-portfolio/projects/daripredictor/daripicture2.png",
@@ -481,13 +547,13 @@ export default function Home() {
                   siteUrl="https://github.com/BadrLaklach/MOBILE_FITNESS_FLUTTER_APP_XP_FIT"
                   isVideo={true}
                   thumbnail="/my-portfolio/projects/xpfit/thumbnail.png"
-                  videoAspectRatio="aspect-[9/19]"
                 />
               </div>
               <div className="self-start">
                 <ProjectCard
                   images={[
                     "/my-portfolio/projects/smartoffice/topology.png",
+                    "/my-portfolio/projects/smartoffice/network-overview.jpg",
                   ]}
                   title="Smart Office IoT"
                   description={t.projects.smartoffice.description}
@@ -552,7 +618,7 @@ export default function Home() {
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     <a
-                      href="https://linkedin.com/in/badr-laklach-6a45602b7"
+                      href="https://www.linkedin.com/in/badrlaklach/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-4 py-2 bg-[#0A66C2] text-white rounded-full text-sm font-medium hover:opacity-90 transition-opacity"

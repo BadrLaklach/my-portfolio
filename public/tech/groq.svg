@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Groq</title>
+  <desc id="desc">A stylized Groq wordmark icon</desc>
+  <defs>
+    <linearGradient id="groqGradient" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f97316"/>
+      <stop offset="1" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#18181b"/>
+  <path d="M42.5 22.5A16 16 0 1 0 44 43.2v-9.7h-9.7" fill="none" stroke="url(#groqGradient)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m43.5 43.5 7 7" fill="none" stroke="#f97316" stroke-width="6" stroke-linecap="round"/>
+</svg>

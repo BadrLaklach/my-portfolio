@@ -8,6 +8,17 @@ export default function Experience() {
 
     const getIcon = (id: string) => {
         switch (id) {
+            case "hawqai":
+                return (
+                    <div className="w-full h-full flex flex-col items-center justify-center p-4">
+                        <span className="bg-gradient-to-r from-cyan-500 to-indigo-500 bg-clip-text text-transparent font-black text-4xl sm:text-5xl tracking-tight text-center leading-none">
+                            HawQ-ai
+                        </span>
+                        <span className="text-gray-500 dark:text-gray-400 font-medium text-xs sm:text-sm tracking-[0.2em] mt-3 uppercase text-center">
+                            XR · Digital Twins
+                        </span>
+                    </div>
+                );
             case "medyouin":
                 return (
                     <div className="relative w-full h-full p-4">
@@ -24,7 +35,7 @@ export default function Experience() {
                 return (
                     <div className="w-full h-full flex flex-col items-center justify-center p-4">
                         <span className="text-[#191919] dark:text-white font-black text-4xl sm:text-5xl tracking-widest text-center leading-none">
-                            Gadz'IT
+                            Gadz&apos;IT
                         </span>
                         <span className="text-gray-500 dark:text-gray-400 font-medium text-xs sm:text-sm tracking-widest mt-2 uppercase">
                             Informatique A&M

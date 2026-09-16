@@ -25,6 +25,13 @@ export const translations = {
         menu: "le menu",
       },
     },
+    hero: {
+      eyebrow: "Ingénierie logicielle · IA appliquée · XR",
+      description:
+        "Je conçois des produits utiles à la rencontre de l'IA, du cloud, du développement full-stack, du mobile et des expériences immersives.",
+      primaryCta: "Explorer mes projets",
+      secondaryCta: "Télécharger mon CV",
+    },
     about: {
       title: "À propos",
       tags: {
@@ -34,14 +41,14 @@ export const translations = {
         mobileWeb: "Mobile & Web",
       },
       description:
-        "Étudiant en 4ème année d'Ingénierie Logicielle et Systèmes Intelligents à l'ENSAM Meknès. Passionné par le DevOps, le Cloud, l'IA et le Machine Learning.",
-      quote: "\"The only way to do great work is to love what you do.\" - Steve Jobs",
+        "Étudiant en 4ème année d'Ingénierie Logicielle et Systèmes Intelligents à l'ENSAM Meknès. Je transforme des idées complexes en produits fiables, de la donnée et du RAG aux applications mobiles et aux systèmes XR.",
+      quote: "\"Talk is cheap. Show me the code.\" — Linus Torvalds",
       education: {
         title: "Mon parcours",
         ensamEngineering: {
           location: "École Nationale Supérieure d'Arts et Métiers (ENSAM), Meknès",
           degree: "Cycle Ingénieur en Génie Logiciel et Systèmes Intelligents",
-          date: "2024 - Présent (2ème année)",
+          date: "2024 - Aujourd'hui (4ème année)",
         },
         ensamPreparatory: {
           location: "École Nationale Supérieure d'Arts et Métiers (ENSAM), Meknès",
@@ -60,6 +67,19 @@ export const translations = {
     experience: {
       title: "Expérience",
       items: [
+        {
+          id: "hawqai",
+          company: "HawQ-ai",
+          role: "Stagiaire Développeur XR",
+          location: "À distance · France",
+          date: "2026 · Stage terminé",
+          achievements: [
+            "Contribution à des expériences Extended Reality destinées à la visualisation et à la simulation de jumeaux numériques.",
+            "Développement Unity autour de Meta Quest 3, Meta XR, OpenXR et Scene Understanding.",
+            "Mise en œuvre de références spatiales et de workflows de relocalisation multi-zones pour aligner des contenus planifiés avec un environnement réel.",
+          ],
+          link: "https://www.linkedin.com/company/hawq-ai/",
+        },
         {
           id: "medyouin",
           company: "Med You In",
@@ -84,6 +104,7 @@ export const translations = {
           achievements: [
             "Membre actif du pôle Intelligence Artificielle et Cybersécurité à l'ENSAM Meknès.",
             "Participation aux ateliers, projets collaboratifs et sessions de partage de connaissances sur les technologies émergentes, le hacking éthique, le Machine Learning et la sécurité numérique.",
+            "2ème place nationale avec l'équipe BAGHRIR_EATERS lors de la compétition CYBERIA 2026 de cybersécurité et d'intelligence artificielle.",
             "Développement des compétences techniques tout en restant connecté avec une communauté passionnée par l'innovation.",
             "Compétences : Python, IA, MLOps, HTML5, Cybersécurité, Développement web."
           ],
@@ -104,7 +125,22 @@ export const translations = {
     },
     projects: {
       title: "Projets",
-      seeProject: "Accéder au site",
+      seeProject: "Voir le projet",
+      hawqai: {
+        description:
+          "Workflow XR pour jumeaux numériques combinant Unity, Meta Quest 3, Scene Understanding et relocalisation spatiale multi-zones. Les références préparées sur desktop sont réalignées avec l'environnement physique afin de restaurer des contenus et des caméras au bon endroit.",
+        date: "2026",
+      },
+      dokumind: {
+        description:
+          "SaaS collaboratif de gestion des connaissances d'entreprise. Ingestion PDF sécurisée, isolation multi-tenant, recherche sémantique, reranking, réponses ancrées et chat en streaming réunis dans une architecture multi-services conteneurisée.",
+        date: "2026",
+      },
+      agileMicroservices: {
+        description:
+          "Espace de travail Agile basé sur des microservices pour gérer projets, sprints, tâches, membres et capacité d'équipe. L'architecture combine Gateway, JWT, appels REST, événements RabbitMQ, persistance PostgreSQL/MongoDB et déploiement Kubernetes.",
+        date: "2026",
+      },
       daripredictor: {
         description:
           "Plateforme full-stack utilisant un modèle d'ensemble Stacking pour prédire les prix de l'immobilier au Maroc. Scraping et nettoyage de 20k annonces via Crawlee, avec ingénierie de caractéristiques avancée. Backend FastAPI async et frontend React/Vite conteneurisés sous Docker.",
@@ -123,7 +159,19 @@ export const translations = {
     },
     certifications: {
       title: "Certifications",
+      verify: "Vérifier le certificat",
       items: [
+        {
+          id: "linux-essentials",
+          title: "Linux Essentials Certificate",
+          issuer: "Linux Professional Institute (LPI)",
+          date: "Délivrée en mai 2026",
+          credentialId: "LPI000692326",
+          description: "Certification validant les fondamentaux de Linux, de la ligne de commande, de la gestion des fichiers, des permissions et des concepts open source.",
+          skills: "Compétences : Linux, ligne de commande, systèmes",
+          image: "/my-portfolio/certifications/linux-essentials.jpg",
+          link: "https://cs.lpi.org/caf/Xamman/certification/verify/LPI000692326/r2vezddsam",
+        },
         {
           id: "oci-ds",
           title: "Oracle Cloud Infrastructure 2025 Certified Data Science Professional",
@@ -162,7 +210,8 @@ export const translations = {
         mobileWeb: "Mobile & Web",
         dataAi: "Data & Intelligence Artificielle",
         databases: "Bases de données",
-        devops: "DevOps & Outils",
+        devops: "Cloud, DevOps & Outils",
+        xr: "XR & 3D",
       }
     },
     contact: {
@@ -178,7 +227,7 @@ export const translations = {
     },
     footer: {
       description:
-        "Étudiant en Ingénierie Logicielle passionné par le développement mobile, l'intelligence artificielle et la création de solutions technologiques innovantes.",
+        "Étudiant en Ingénierie Logicielle passionné par l'IA appliquée, les systèmes cloud-native, le développement mobile et les expériences XR.",
       navigation: "Navigation",
       contact: {
         title: "Contact & Réseaux",
@@ -328,6 +377,13 @@ export const translations = {
         menu: "menu",
       },
     },
+    hero: {
+      eyebrow: "Software engineering · applied AI · XR",
+      description:
+        "I build useful products at the intersection of AI, cloud-native systems, full-stack engineering, mobile development, and immersive experiences.",
+      primaryCta: "Explore my projects",
+      secondaryCta: "Download my CV",
+    },
     about: {
       title: "About",
       tags: {
@@ -337,14 +393,14 @@ export const translations = {
         mobileWeb: "Mobile & Web",
       },
       description:
-        "4th-year Software Engineering and Intelligent Systems student at ENSAM Meknès. Passionate about DevOps, Cloud, AI, and Machine Learning.",
-      quote: "\"The only way to do great work is to love what you do.\" - Steve Jobs",
+        "4th-year Software Engineering and Intelligent Systems student at ENSAM Meknès. I turn complex ideas into reliable products, from data and RAG systems to mobile applications and immersive XR workflows.",
+      quote: "\"Talk is cheap. Show me the code.\" — Linus Torvalds",
       education: {
         title: "My Education",
         ensamEngineering: {
           location: "National School of Arts and Crafts (ENSAM), Meknès",
           degree: "Engineering Cycle in Software Engineering & Intelligent Systems",
-          date: "2024 - Present (2nd Year)",
+          date: "2024 - Present (4th year)",
         },
         ensamPreparatory: {
           location: "National School of Arts and Crafts (ENSAM), Meknès",
@@ -363,6 +419,19 @@ export const translations = {
     experience: {
       title: "Experience",
       items: [
+        {
+          id: "hawqai",
+          company: "HawQ-ai",
+          role: "XR Developer Intern",
+          location: "Remote · France",
+          date: "2026 · Completed",
+          achievements: [
+            "Contributed to Extended Reality experiences for the visualization and simulation of digital-twin environments.",
+            "Developed Unity workflows around Meta Quest 3, Meta XR, OpenXR, and Scene Understanding.",
+            "Worked with spatial references and multi-zone relocalization workflows to align desktop-planned content with the physical environment.",
+          ],
+          link: "https://www.linkedin.com/company/hawq-ai/",
+        },
         {
           id: "medyouin",
           company: "Med You In",
@@ -387,6 +456,7 @@ export const translations = {
           achievements: [
             "Active member of the Artificial Intelligence and Cybersecurity pole at ENSAM Meknes.",
             "Participated in workshops, collaborative projects, and knowledge-sharing sessions focused on emerging technologies, ethical hacking, Machine Learning, and digital security.",
+            "Placed 2nd nationally with the BAGHRIR_EATERS team at CYBERIA 2026, a cybersecurity and artificial-intelligence competition.",
             "Deepened technical skills while staying connected with a community passionate about innovation and tech excellence.",
             "Skills: Python, AI, MLOps, HTML5, Cybersecurity, Web Development."
           ],
@@ -407,7 +477,22 @@ export const translations = {
     },
     projects: {
       title: "Projects",
-      seeProject: "View website",
+      seeProject: "View project",
+      hawqai: {
+        description:
+          "XR workflow for digital twins combining Unity, Meta Quest 3, Scene Understanding, and multi-zone spatial relocalization. Desktop-authored references are aligned with the physical environment to restore content and camera positions reliably.",
+        date: "2026",
+      },
+      dokumind: {
+        description:
+          "Collaborative enterprise knowledge-management SaaS with secure PDF ingestion, multi-tenant isolation, semantic search, retrieval reranking, grounded answers, and streaming chat across a containerized multi-service architecture.",
+        date: "2026",
+      },
+      agileMicroservices: {
+        description:
+          "Microservices-based Agile workspace for projects, sprints, tasks, members, and team capacity. The architecture combines an API Gateway, JWT security, REST calls, RabbitMQ events, PostgreSQL/MongoDB persistence, and Kubernetes deployment.",
+        date: "2026",
+      },
       daripredictor: {
         description:
           "Full-stack platform using a Stacking Ensemble model to predict Moroccan real estate values. Scraped and cleaned 20k listings with custom Crawlee spiders and advanced feature engineering. Async FastAPI backend and React/Vite frontend containerized with Docker.",
@@ -426,7 +511,19 @@ export const translations = {
     },
     certifications: {
       title: "Certifications",
+      verify: "Verify credential",
       items: [
+        {
+          id: "linux-essentials",
+          title: "Linux Essentials Certificate",
+          issuer: "Linux Professional Institute (LPI)",
+          date: "Issued May 2026",
+          credentialId: "LPI000692326",
+          description: "Certification covering Linux fundamentals, command-line usage, file management, permissions, and core open-source concepts.",
+          skills: "Skills: Linux, command line, systems",
+          image: "/my-portfolio/certifications/linux-essentials.jpg",
+          link: "https://cs.lpi.org/caf/Xamman/certification/verify/LPI000692326/r2vezddsam",
+        },
         {
           id: "oci-ds",
           title: "Oracle Cloud Infrastructure 2025 Certified Data Science Professional",
@@ -465,7 +562,8 @@ export const translations = {
         mobileWeb: "Mobile & Web",
         dataAi: "Data & Artificial Intelligence",
         databases: "Databases",
-        devops: "DevOps & Tools",
+        devops: "Cloud, DevOps & Tools",
+        xr: "XR & 3D",
       }
     },
     contact: {
@@ -481,7 +579,7 @@ export const translations = {
     },
     footer: {
       description:
-        "Software Engineering student passionate about mobile development, artificial intelligence, and creating innovative technological solutions.",
+        "Software Engineering student passionate about applied AI, cloud-native systems, mobile development, and immersive XR experiences.",
       navigation: "Navigation",
       contact: {
         title: "Contact & Networks",

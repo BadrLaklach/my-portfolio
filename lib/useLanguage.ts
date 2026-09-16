@@ -9,6 +9,8 @@ export function useLanguage() {
   useEffect(() => {
     const browserLang = navigator.language.toLowerCase();
     const detectedLang = browserLang.startsWith("fr") ? "fr" : "en";
+    // Language detection runs after hydration to avoid server/client markup drift.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setLanguage(detectedLang);
   }, []);
 

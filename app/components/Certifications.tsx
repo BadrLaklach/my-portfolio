@@ -21,7 +21,7 @@ export default function Certifications() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
                     {t.certifications.items.map((cert) => (
                         <div
                             key={cert.id}
@@ -42,7 +42,7 @@ export default function Certifications() {
                             </div>
 
                             {/* Content Container */}
-                            <div className="p-6 sm:p-8 flex flex-col flex-grow">
+                            <div className="p-6 flex flex-col flex-grow">
                                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 leading-tight">
                                     {cert.title}
                                 </h3>
@@ -58,16 +58,28 @@ export default function Certifications() {
                                     )}
                                 </div>
 
-                                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-6 flex-grow">
+                                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-6 flex-grow">
                                     {cert.description}
                                 </p>
 
                                 {cert.skills && (
-                                    <div className="mt-auto pt-6 border-t border-gray-100 dark:border-gray-800">
-                                        <p className="text-sm font-medium text-[#191919] dark:text-white opacity-90">
+                                    <div className="mt-auto pt-5 border-t border-gray-100 dark:border-gray-800">
+                                        <p className="text-xs sm:text-sm font-medium text-[#191919] dark:text-white opacity-90">
                                             {cert.skills}
                                         </p>
                                     </div>
+                                )}
+
+                                {cert.link && (
+                                    <a
+                                        href={cert.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="mt-4 inline-flex w-fit items-center gap-2 text-sm font-semibold text-blue-700 dark:text-blue-300 hover:underline"
+                                    >
+                                        {t.certifications.verify}
+                                        <span aria-hidden="true">↗</span>
+                                    </a>
                                 )}
                             </div>
                         </div>

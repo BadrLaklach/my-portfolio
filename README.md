@@ -11,7 +11,7 @@
 
 ## About
 
-Software Engineering and Intelligent Systems student at ENSAM-Meknès (2022-2027), currently contributing as an XR Intern at HawQ-ai. This portfolio presents my work across applied AI, RAG systems, XR and digital twins, distributed backends, mobile development, and web engineering.
+Software Engineering and Intelligent Systems student at ENSAM-Meknès (2022-2027), building applied AI, cloud-native, full-stack, mobile, and XR products.
 
 Highlighted work includes HawQ-ai XR relocalization, DokuMind enterprise knowledge management, Agile Microservices, DariPredictor, XP-FIT, and a smart-office IoT simulation.
 
@@ -30,10 +30,19 @@ Highlighted work includes HawQ-ai XR relocalization, DokuMind enterprise knowled
 - **3D Animations**: Interactive background effects powered by Three.js
 - **Bilingual Interface**: Full FR/EN support based on browser preferences
 - **Responsive Architecture**: Fully optimized for mobile, tablet, and desktop viewports
-- **Dark/Light Mode**: Adaptive theming with user persistance
+- **Dark/Light Mode**: Adaptive theming with user persistence
 - **Direct Contact CTA**: Static, zero-dependency email integration
 - **SEO Optimization**: Comprehensive metadata, semantic HTML, robots.txt, and JSON-LD
 - **Legal Compliance**: Mentions légales and privacy policy pages included
+
+## Featured projects
+
+- **HawQ-ai XR / MRAF** — Unity and Meta Quest 3 workflow for digital-twin visualization, Scene Understanding, and multi-zone spatial relocalization.
+- **DokuMind** — Collaborative multi-tenant knowledge-management SaaS with PDF ingestion, semantic retrieval, reranking, grounded answers, and streaming chat.
+- **Agile Microservices** — Agile workspace built with Spring Boot services, API Gateway, JWT, RabbitMQ, PostgreSQL, MongoDB, React, Docker, and Kubernetes.
+- **DariPredictor** — Moroccan real-estate valuation platform with data ingestion, ensemble ML, FastAPI, React/Vite, mapping, and Docker.
+- **XP-FIT** — Gamified Flutter fitness and nutrition application.
+- **Smart Office IoT** — Cisco Packet Tracer network and automation simulation with sensors, RFID access control, safety, and energy-aware logic.
 
 ## Current project focus
 

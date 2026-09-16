@@ -14,7 +14,6 @@ interface ProjectCardProps {
   siteUrl?: string;
   imageFit?: "cover" | "contain";
   thumbnail?: string;
-  videoAspectRatio?: string;
 }
 
 export default function ProjectCard({
@@ -27,7 +26,6 @@ export default function ProjectCard({
   siteUrl,
   imageFit = "cover",
   thumbnail,
-  videoAspectRatio = "aspect-video",
 }: ProjectCardProps) {
   const { t } = useLanguage();
   const [isHovering, setIsHovering] = useState(false);

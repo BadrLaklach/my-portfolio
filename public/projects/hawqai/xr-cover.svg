@@ -1,0 +1,39 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="background" x1="120" y1="80" x2="1510" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="0.52" stop-color="#172554"/>
+      <stop offset="1" stop-color="#312E81"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="420" y1="280" x2="1220" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <filter id="blur" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="32"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" rx="42" fill="url(#background)"/>
+  <circle cx="1240" cy="170" r="170" fill="#22D3EE" fill-opacity="0.16" filter="url(#blur)"/>
+  <circle cx="330" cy="720" r="190" fill="#A78BFA" fill-opacity="0.18" filter="url(#blur)"/>
+  <path d="M170 685L515 480L805 615L1150 330L1430 485" stroke="url(#glow)" stroke-opacity="0.5" stroke-width="3" stroke-dasharray="10 14"/>
+  <path d="M170 685L515 480L805 615L1150 330L1430 485V730H170V685Z" fill="#0B1225" fill-opacity="0.45" stroke="url(#glow)" stroke-opacity="0.28" stroke-width="2"/>
+  <g fill="#67E8F9" stroke="#CFFAFE" stroke-width="4">
+    <circle cx="170" cy="685" r="13"/>
+    <circle cx="515" cy="480" r="13"/>
+    <circle cx="805" cy="615" r="13"/>
+    <circle cx="1150" cy="330" r="13"/>
+    <circle cx="1430" cy="485" r="13"/>
+  </g>
+  <g transform="translate(630 180)">
+    <path d="M95 220V148C95 66 160 0 242 0C324 0 389 66 389 148V220" stroke="#F8FAFC" stroke-width="30" stroke-linecap="round"/>
+    <rect x="55" y="170" width="112" height="132" rx="45" fill="#F8FAFC"/>
+    <rect x="317" y="170" width="112" height="132" rx="45" fill="#F8FAFC"/>
+    <path d="M167 219H317" stroke="#0F172A" stroke-width="20" stroke-linecap="round"/>
+    <circle cx="112" cy="236" r="19" fill="#22D3EE"/>
+    <circle cx="373" cy="236" r="19" fill="#A78BFA"/>
+  </g>
+  <text x="110" y="125" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="3">XR DIGITAL TWIN</text>
+  <text x="110" y="180" fill="#A5B4FC" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="500" letter-spacing="1">Scene understanding · spatial relocalization · Meta Quest 3</text>
+  <text x="110" y="828" fill="#CBD5E1" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="500" letter-spacing="1">Unity 6  /  Meta XR  /  OpenXR  /  MRAF</text>
+</svg>

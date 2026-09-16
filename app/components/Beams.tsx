@@ -241,6 +241,8 @@ const Beams: FC<BeamsProps> = ({
 
   // Attendre le montage côté client
   useEffect(() => {
+    // The mounted flag intentionally gates browser-only theme APIs after hydration.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
   }, []);
 

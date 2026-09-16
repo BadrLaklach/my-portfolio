@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { Viewport } from "next";
 import {
   Geist,
   Geist_Mono
@@ -24,18 +25,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://badrlaklach.github.io/my-portfolio"),
-  title: "Badr Laklach - Portfolio",
+  metadataBase: new URL("https://badrlaklach.github.io/my-portfolio/"),
+  title: "Badr Laklach | AI, Full-Stack & XR Developer",
   description:
-    "Portfolio of Badr Laklach, Software Engineering student at ENSAM Meknès.",
+    "Portfolio of Badr Laklach, a fourth-year Software Engineering and Intelligent Systems student building applied AI, cloud-native, mobile, full-stack, and XR products.",
   icons: {
     icon: [
-      { url: "/favicon.ico", type: "image/x-icon" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/my-portfolio/favicon.ico", type: "image/x-icon" },
+      { url: "/my-portfolio/favicon.svg", type: "image/svg+xml" },
     ],
-    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    apple: [{ url: "/my-portfolio/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
-  manifest: "/site.webmanifest",
+  manifest: "/my-portfolio/site.webmanifest",
   alternates: {
     canonical: "https://badrlaklach.github.io/my-portfolio",
     languages: {
@@ -44,14 +45,14 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Badr Laklach - Portfolio",
+    title: "Badr Laklach | AI, Full-Stack & XR Developer",
     description:
-      "Portfolio of Badr Laklach, Software Engineering student at ENSAM Meknès.",
+      "Applied AI, cloud-native systems, mobile products, and immersive XR experiences by Badr Laklach.",
     url: "https://badrlaklach.github.io/my-portfolio",
     siteName: "Badr Laklach - Portfolio",
     images: [
       {
-        url: "/my-portfolio/portfolio.jpeg",
+        url: "https://badrlaklach.github.io/my-portfolio/portfolio.jpeg",
         width: 1080,
         height: 1080,
         alt: "Badr Laklach",
@@ -62,15 +63,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Badr Laklach - Portfolio",
+    title: "Badr Laklach | AI, Full-Stack & XR Developer",
     description:
-      "Portfolio of Badr Laklach, Software Engineering student at ENSAM Meknès.",
-    images: ["/my-portfolio/portfolio.jpeg"],
+      "Applied AI, cloud-native systems, mobile products, and immersive XR experiences by Badr Laklach.",
+    images: ["https://badrlaklach.github.io/my-portfolio/portfolio.jpeg"],
   },
 };
 
-export const viewport = {
-  themeColor: "#ffffff",
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f8fafc" },
+    { media: "(prefers-color-scheme: dark)", color: "#121212" },
+  ],
 };
 
 export default function RootLayout({
