@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://badrlaklach.github.io/my-portfolio/"),
   title: "Badr Laklach | AI, Full-Stack & XR Developer",
   description:
-    "Portfolio of Badr Laklach, a fourth-year Software Engineering and Intelligent Systems student building applied AI, cloud-native, mobile, full-stack, and XR products.",
+    "Portfolio of Badr Laklach, a fifth-year Software Engineering and Intelligent Systems student building applied AI, cloud-native, mobile, full-stack, and XR products.",
   icons: {
     icon: [
       { url: "/my-portfolio/favicon.ico", type: "image/x-icon" },

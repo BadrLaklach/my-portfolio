@@ -41,14 +41,14 @@ export const translations = {
         mobileWeb: "Mobile & Web",
       },
       description:
-        "Étudiant en 4ème année d'Ingénierie Logicielle et Systèmes Intelligents à l'ENSAM Meknès. Je transforme des idées complexes en produits fiables, de la donnée et du RAG aux applications mobiles et aux systèmes XR.",
+        "Étudiant en 5ème année d'Ingénierie Logicielle et Systèmes Intelligents à l'ENSAM Meknès. Je transforme des idées complexes en produits fiables, de la donnée et du RAG aux applications mobiles et aux systèmes XR.",
       quote: "\"Talk is cheap. Show me the code.\" — Linus Torvalds",
       education: {
         title: "Mon parcours",
         ensamEngineering: {
           location: "École Nationale Supérieure d'Arts et Métiers (ENSAM), Meknès",
           degree: "Cycle Ingénieur en Génie Logiciel et Systèmes Intelligents",
-          date: "2024 - Aujourd'hui (4ème année)",
+          date: "2024 - Aujourd'hui (5ème année)",
         },
         ensamPreparatory: {
           location: "École Nationale Supérieure d'Arts et Métiers (ENSAM), Meknès",
@@ -393,14 +393,14 @@ export const translations = {
         mobileWeb: "Mobile & Web",
       },
       description:
-        "4th-year Software Engineering and Intelligent Systems student at ENSAM Meknès. I turn complex ideas into reliable products, from data and RAG systems to mobile applications and immersive XR workflows.",
+        "5th-year Software Engineering and Intelligent Systems student at ENSAM Meknès. I turn complex ideas into reliable products, from data and RAG systems to mobile applications and immersive XR workflows.",
       quote: "\"Talk is cheap. Show me the code.\" — Linus Torvalds",
       education: {
         title: "My Education",
         ensamEngineering: {
           location: "National School of Arts and Crafts (ENSAM), Meknès",
           degree: "Engineering Cycle in Software Engineering & Intelligent Systems",
-          date: "2024 - Present (4th year)",
+          date: "2024 - Present (5th year)",
         },
         ensamPreparatory: {
           location: "National School of Arts and Crafts (ENSAM), Meknès",

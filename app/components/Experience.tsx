@@ -10,46 +10,54 @@ export default function Experience() {
         switch (id) {
             case "hawqai":
                 return (
-                    <div className="w-full h-full flex flex-col items-center justify-center p-4">
-                        <span className="bg-gradient-to-r from-cyan-500 to-indigo-500 bg-clip-text text-transparent font-black text-4xl sm:text-5xl tracking-tight text-center leading-none">
-                            HawQ-ai
-                        </span>
-                        <span className="text-gray-500 dark:text-gray-400 font-medium text-xs sm:text-sm tracking-[0.2em] mt-3 uppercase text-center">
-                            XR · Digital Twins
-                        </span>
+                    <div className="relative flex h-full w-full items-center justify-center p-4">
+                        <Image
+                            src="/my-portfolio/assets/hawqai/logo-black.png"
+                            alt="HawQ-ai logo"
+                            fill
+                            sizes="(max-width: 640px) 100vw, 288px"
+                            className="object-contain p-4 dark:hidden"
+                        />
+                        <Image
+                            src="/my-portfolio/assets/hawqai/logo-white.png"
+                            alt=""
+                            fill
+                            sizes="(max-width: 640px) 100vw, 288px"
+                            className="hidden object-contain p-4 dark:block"
+                        />
                     </div>
                 );
             case "medyouin":
                 return (
-                    <div className="relative w-full h-full p-4">
+                    <div className="relative h-full w-full p-4">
                         <Image
                             src="/my-portfolio/assets/medyouin.png"
                             alt="Med You In"
                             fill
                             sizes="(max-width: 640px) 100vw, 288px"
-                            className="object-contain invert dark:invert-0 transition-all duration-300 p-4"
+                            className="object-contain p-4 invert transition-all duration-300 dark:invert-0"
                         />
                     </div>
                 );
             case "gadzit":
                 return (
-                    <div className="w-full h-full flex flex-col items-center justify-center p-4">
-                        <span className="text-[#191919] dark:text-white font-black text-4xl sm:text-5xl tracking-widest text-center leading-none">
+                    <div className="flex h-full w-full flex-col items-center justify-center p-4">
+                        <span className="text-center text-4xl font-black leading-none tracking-widest text-[#191919] dark:text-white sm:text-5xl">
                             Gadz&apos;IT
                         </span>
-                        <span className="text-gray-500 dark:text-gray-400 font-medium text-xs sm:text-sm tracking-widest mt-2 uppercase">
-                            Informatique A&M
+                        <span className="mt-2 text-center text-xs font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400 sm:text-sm">
+                            Informatique A&amp;M
                         </span>
                     </div>
                 );
             case "fame":
                 return (
-                    <div className="w-full h-full flex flex-col items-center justify-center p-4">
-                        <span className="text-[#191919] dark:text-white font-black text-5xl sm:text-6xl tracking-widest text-center leading-none">
+                    <div className="flex h-full w-full flex-col items-center justify-center p-4">
+                        <span className="text-center text-5xl font-black leading-none tracking-widest text-[#191919] dark:text-white sm:text-6xl">
                             FAME
                         </span>
-                        <span className="text-gray-500 dark:text-gray-400 font-medium text-xs sm:text-sm tracking-widest mt-2 uppercase text-center">
-                            Forum Arts & Métiers Entreprises
+                        <span className="mt-2 text-center text-xs font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400 sm:text-sm">
+                            Forum Arts &amp; Metiers Entreprises
                         </span>
                     </div>
                 );
@@ -61,45 +69,46 @@ export default function Experience() {
     return (
         <section
             id={t.sections.experience}
-            className="pt-32 pb-8 bg-gray-50 dark:bg-[#121212]"
+            className="bg-gray-50 pb-8 pt-32 dark:bg-[#121212]"
         >
-            <div className="max-w-7xl mx-auto px-6 sm:px-12">
+            <div className="mx-auto max-w-7xl px-6 sm:px-12">
                 <div className="mb-16 sm:mb-20">
                     <div className="flex items-end gap-6 sm:gap-8">
-                        <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white whitespace-nowrap">
+                        <h2 className="whitespace-nowrap text-5xl font-bold text-gray-900 dark:text-white sm:text-6xl lg:text-7xl">
                             {t.experience.title}
                         </h2>
-                        <div className="h-[3px] w-full bg-gray-900/30 dark:bg-white/30 mb-2"></div>
+                        <div className="mb-2 h-[3px] w-full bg-gray-900/30 dark:bg-white/30" />
                     </div>
                 </div>
 
                 <div className="space-y-24">
                     {t.experience.items.map((item) => (
-                        <div key={item.id} className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
-                            <div className="flex-shrink-0 w-full md:w-auto">
-                                <div className="relative w-full h-48 sm:w-72 sm:h-48 flex items-center justify-center group transition-all duration-300">
+                        <div
+                            key={item.id}
+                            className="flex flex-col items-start gap-8 md:flex-row md:gap-12"
+                        >
+                            <div className="w-full flex-shrink-0 md:w-auto">
+                                <div className="relative flex h-48 w-full items-center justify-center transition-all duration-300 group sm:h-48 sm:w-72">
                                     {getIcon(item.id)}
                                 </div>
                             </div>
 
-                            <div className="flex-1 w-full">
-                                <div className="relative space-y-12 h-full">
-                                    {/* Timeline line */}
-                                    <div className="absolute left-[7px] top-2 bottom-[-40px] w-[2px] bg-[#191919] dark:bg-white opacity-20 dark:opacity-20 md:opacity-100 md:dark:opacity-100"></div>
+                            <div className="w-full flex-1">
+                                <div className="relative h-full space-y-12">
+                                    <div className="absolute bottom-[-40px] left-[7px] top-2 w-[2px] bg-[#191919] opacity-20 dark:bg-white dark:opacity-20 md:opacity-100 md:dark:opacity-100" />
 
                                     <div className="relative pl-8">
-                                        {/* Timeline dot */}
-                                        <div className="absolute left-0 top-2 w-4 h-4 rounded-full bg-[#191919] dark:bg-white ring-4 ring-gray-50 dark:ring-[#121212]"></div>
+                                        <div className="absolute left-0 top-2 h-4 w-4 rounded-full bg-[#191919] ring-4 ring-gray-50 dark:bg-white dark:ring-[#121212]" />
 
-                                        <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
-                                            <div className="flex-1 min-w-0">
-                                                <h3 className="text-xl font-bold text-[#191919] dark:text-white uppercase transition-colors">
+                                        <div className="mb-4 flex flex-col justify-between gap-4 sm:flex-row sm:items-start">
+                                            <div className="min-w-0 flex-1">
+                                                <h3 className="text-xl font-bold uppercase text-[#191919] transition-colors dark:text-white">
                                                     {item.link ? (
                                                         <a
                                                             href={item.link}
                                                             target="_blank"
                                                             rel="noopener noreferrer"
-                                                            className="hover:opacity-70 transition-opacity"
+                                                            className="transition-opacity hover:opacity-70"
                                                         >
                                                             {item.company}
                                                         </a>
@@ -108,10 +117,10 @@ export default function Experience() {
                                                     )}
                                                 </h3>
                                                 <p className="text-lg font-medium text-gray-700 dark:text-gray-300">
-                                                    {item.role} • {item.location}
+                                                    {item.role} {" · "} {item.location}
                                                 </p>
                                             </div>
-                                            <span className="text-sm italic text-gray-600 dark:text-gray-400 whitespace-nowrap flex-shrink-0 sm:pt-1">
+                                            <span className="flex-shrink-0 whitespace-nowrap text-sm italic text-gray-600 dark:text-gray-400 sm:pt-1">
                                                 {item.date}
                                             </span>
                                         </div>
@@ -121,10 +130,10 @@ export default function Experience() {
                                                 {item.achievements.map((achievement, index) => (
                                                     <li
                                                         key={index}
-                                                        className="flex gap-3 text-gray-700 dark:text-gray-300 leading-relaxed text-base sm:text-lg"
+                                                        className="flex gap-3 text-base leading-relaxed text-gray-700 dark:text-gray-300 sm:text-lg"
                                                     >
-                                                        <span className="text-[#191919] dark:text-white font-bold">
-                                                            •
+                                                        <span className="font-bold text-[#191919] dark:text-white">
+                                                            {"•"}
                                                         </span>
                                                         <span>{achievement}</span>
                                                     </li>

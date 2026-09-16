@@ -4,7 +4,7 @@
 
 ## About
 
-Software Engineering and Intelligent Systems student at ENSAM Meknes, building applied AI, cloud-native, full-stack, mobile, and XR products.
+Fifth-year Software Engineering and Intelligent Systems student at ENSAM Meknes, building applied AI, cloud-native, full-stack, mobile, and XR products.
 
 ## Technical stack
 
