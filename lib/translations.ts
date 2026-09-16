@@ -72,7 +72,7 @@ export const translations = {
           company: "HawQ-ai",
           role: "Stagiaire Développeur XR",
           location: "À distance · France",
-          date: "2026 · Stage terminé",
+          date: "1 juil. 2026 - 1 sept. 2026",
           achievements: [
             "Contribution à des expériences Extended Reality destinées à la visualisation et à la simulation de jumeaux numériques.",
             "Développement Unity autour de Meta Quest 3, Meta XR, OpenXR et Scene Understanding.",
@@ -424,7 +424,7 @@ export const translations = {
           company: "HawQ-ai",
           role: "XR Developer Intern",
           location: "Remote · France",
-          date: "2026 · Completed",
+          date: "Jul 1, 2026 - Sep 1, 2026",
           achievements: [
             "Contributed to Extended Reality experiences for the visualization and simulation of digital-twin environments.",
             "Developed Unity workflows around Meta Quest 3, Meta XR, OpenXR, and Scene Understanding.",
