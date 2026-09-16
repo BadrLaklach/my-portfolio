@@ -11,7 +11,9 @@
 
 ## About
 
-4th-year Software Engineering and Intelligent Systems student at ENSAM Meknès. This portfolio serves as a comprehensive overview of my academic projects, professional experience, and technical certifications across Data Science, Artificial Intelligence, mobile development, and web engineering.
+Software Engineering and Intelligent Systems student at ENSAM-Meknès (2022-2027), currently contributing as an XR Intern at HawQ-ai. This portfolio presents my work across applied AI, RAG systems, XR and digital twins, distributed backends, mobile development, and web engineering.
+
+Highlighted work includes HawQ-ai XR relocalization, DokuMind enterprise knowledge management, Agile Microservices, DariPredictor, XP-FIT, and a smart-office IoT simulation.
 
 ## Technical Stack
 
@@ -32,6 +34,12 @@
 - **Direct Contact CTA**: Static, zero-dependency email integration
 - **SEO Optimization**: Comprehensive metadata, semantic HTML, robots.txt, and JSON-LD
 - **Legal Compliance**: Mentions légales and privacy policy pages included
+
+## Current project focus
+
+- **Applied AI and RAG**: document ingestion, semantic retrieval, reranking, grounded generation, and real-estate prediction.
+- **XR and digital twins**: Unity, Meta Quest 3, Scene Understanding, and spatial relocalization.
+- **Cloud-native systems**: Spring Boot microservices, API gateways, RabbitMQ, PostgreSQL, MongoDB, Docker, and Kubernetes.
 
 ## Internationalization
 
@@ -55,7 +63,7 @@ The portfolio is deployed to GitHub Pages and updates automatically on pushes to
 ## Author
 
 - **Badr Laklach**
-- [LinkedIn Profile](https://linkedin.com/in/badr-laklach-6a45602b7)
+- [LinkedIn Profile](https://www.linkedin.com/in/badrlaklach/)
 - [GitHub Profile](https://github.com/BadrLaklach)
 
 ---
